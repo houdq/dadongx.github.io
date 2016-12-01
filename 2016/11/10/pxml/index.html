@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        南北桥的博客
+        python 编写xml｜南北桥的博客
         
     </title>
 
-    <link rel="canonical" href="http://psyco.cn/archives/2016/11/">
+    <link rel="canonical" href="http://psyco.cn/2016/11/10/pxml/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -43,7 +43,7 @@
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "false" data-istags="false
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top " id="nav-top" data-ispost = "true" data-istags="false
 " data-ishome = "false" >
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
@@ -126,274 +126,161 @@
 
 <!-- Main Content -->
 
+<!--only post-->
 
-<!-- Page Header -->
-<div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 visible-xs-block visible-sm-block">
-    <div class="row">
-        <header class="intro-header">
-            <div class="container">
-                <div class="site-heading text-center">
-                    <div class="about-me">
-                        <!--移动端头部显示-->
-                        <img src="avatar-hux.jpg"/>
-                        <h5><a href="/about/">南北桥</a></h5>
-                        <p>08年感动中国组委会特别奖！2006年的时代杂志年度风云人物！</p>
+
+<img class="wechat-title-img"
+     src="df.jpg">
+
+
+<style>
+    
+    header.intro-header {
+        background-image: url('df.jpg')
+    }
+
+    
+</style>
+
+<header class="intro-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
+                <div class="post-heading">
+                    <h1>python 编写xml</h1>
+                    
+                    <span class="meta">
+                         作者 南北桥
+                        <span>
+                          日期 2016-11-10
+                         </span>
+                    </span>
+                    <div class="tags text-center">
+                        
+                        <a class="tag" href="/tags/#python"
+                           title="python">python</a>
+                        
                     </div>
                 </div>
             </div>
-        </header>
+        </div>
     </div>
-</div>
-<!-- Main Content -->
-<div class="container custom-haojen-container">
-    <!-- Post Container -->
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
-            <!-- Main Content -->
-
-
-
-<div class="post-preview "
-     style="background-image: url('')">
-    <a href="/2016/11/16/tag/">
-        <h2 class="post-title">
-            【windows光盘】 自动打开index 主页
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-16
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                细心的人会发现，光盘总是有个autorun.inf文件，这个就是自动运行的配置文件。
-12[AUTORUN] OPEN=auto.exe
-如果要运行html，可以这么做：12[AUTORUN] OPEN=c:\progra~1\intern~1\Iexplore   file:///d:\win..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('')">
-    <a href="/2016/11/16/test1/">
-        <h2 class="post-title">
-            走走
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-16
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                走走我曾经
-很害怕一个人生活
-因为我来自大家庭
-家里总是很热闹
-甚至害怕一个人吃饭
-一个人出行
-一个人逛街
-但生活就是如此
-还来不及害怕
-已经习惯了
-譬如今晚
-一个人走走
-
-
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('')">
-    <a href="/2016/11/16/test/">
-        <h2 class="post-title">
-            cmd 传入参数
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-16
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                12345@echo offset /p var=请输入项目名: echo 输入的项目名为：%var%， 如果正确按回车！ //确认输入名pausesppbuild --create=%var%
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('')">
-    <a href="/2016/11/15/hello-world/">
-        <h2 class="post-title">
-            Hello World
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-15
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer i..
-            </p>
-        </div>
-    </a>
-
-</div>
-
-<hr>
-
-
-
-<div class="post-preview "
-     style="background-image: url('')">
-    <a href="/2016/11/10/pxml/">
-        <h2 class="post-title">
+    <div class="post-title-haojen">
+        <span>
             python 编写xml
-        </h2>
-        <p class="post-meta">
-            <i class="fa fa-calendar" aria-hidden="true"></i> 2016-11-10
-        </p>
-        
-        <div class="post-content-preview">
-            <p>
-                python对于xml操作也是很强大的。之前有玩过，今天同事问我之前这部分的处理，一下子感觉很生疏了们现在贴出来一个例子，一起回忆：
-使用的是xml.dom。 官网api：http://docs.python.org/2/library/xml.dom.html?1234567891011121..
-            </p>
+        </span>
+    </div>
+</header>
+
+<!-- Post Content -->
+<article>
+    <div class="container">
+        <div class="row">
+            <!-- Post Container -->
+            <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
+                <p>python对于xml操作也是很强大的。之前有玩过，今天同事问我之前这部分的处理，一下子感觉很生疏了们现在贴出来一个例子，一起回忆：</p>
+<p>使用的是xml.dom。 官网api：<a href="http://docs.python.org/2/library/xml.dom.html?" target="_blank" rel="external">http://docs.python.org/2/library/xml.dom.html?</a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line">def GenerateXml():</div><div class="line">  import xml.dom.minidom</div><div class="line">  impl = xml.dom.minidom.getDOMImplementation()</div><div class="line">  dom = impl.createDocument(None, &apos;employees&apos;, None)   #建立根节点</div><div class="line">  root = dom.documentElement   #获取对象</div><div class="line">  employee = dom.createElement(&apos;employee&apos;)   </div><div class="line">  root.appendChild(employee)        #创建根节点下的子节点</div><div class="line"></div><div class="line">  nameE=dom.createElement(&apos;name&apos;)        #穿件下级节点</div><div class="line">  nameT=dom.createTextNode(&apos;linux&apos;)        #赋值</div><div class="line">  nameE.appendChild(nameT)</div><div class="line">  employee.appendChild(nameE)</div><div class="line"></div><div class="line">  ageE=dom.createElement(&apos;age&apos;)</div><div class="line">  ageT=dom.createTextNode(&apos;30&apos;)</div><div class="line">  ageE.appendChild(ageT)</div><div class="line">  employee.appendChild(ageE)</div><div class="line"></div><div class="line">  f= open(&apos;employees2.xml&apos;, &apos;w&apos;)</div><div class="line">  dom.writexml(f, addindent=&apos;  &apos;, newl=&apos;\n&apos;,encoding=&apos;utf-8&apos;)</div><div class="line">  f.close()  </div><div class="line"></div><div class="line">GenerateXml()</div></pre></td></tr></table></figure></p>
+
+                <hr>
+                
+
+                <ul class="pager">
+                    
+                    <li class="previous">
+                        <a href="/2016/11/15/hello-world/" data-toggle="tooltip" data-placement="top"
+                           title="Hello World">&larr; Previous Post</a>
+                    </li>
+                    
+                    
+                </ul>
+
+                
+                <!-- 多说评论框 start -->
+                <div class="comment">
+                    <div class="ds-thread"
+                         data-thread-key="2016/11/10/pxml/"
+                         data-title="python 编写xml"
+                         data-url="http://psyco.cn/2016/11/10/pxml/">
+                    </div>
+                </div>
+                <!-- 多说评论框 end -->
+                
+
+                
+
+            </div>
+
+            <div class="hidden-xs col-sm-3 toc-col">
+                <div class="toc-wrap">
+                    
+                </div>
+            </div>
         </div>
-    </a>
 
-</div>
+        <div class="row">
+            <!-- Sidebar Container -->
 
-<hr>
+            <div class="
+                col-lg-8 col-lg-offset-2
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-
-
-
-<!-- 翻页 pager -->
-
-<ul class="pager">
-    
-    
-</ul>
-
-
-        </div>
-        <!-- Sidebar Container -->
-        <div class="
-                col-lg-3 col-lg-offset-0
-                col-md-3 col-md-offset-0
-                col-sm-12
-                col-xs-12
-                sidebar-container
-            ">
-
-            <!-- About Me -->
-            <section class="visible-md visible-lg" style="padding: 0 18px">
-                <div class="short-about">
-                    <!--侧边栏头像-->
-                    
-                    <img src="avatar-hux.jpg"/>
-                    
-                    <h5><a href="/about/">南北桥</a></h5>
-                    
-                    <p>08年感动中国组委会特别奖！2006年的时代杂志年度风云人物！</p>
-                    
-                    <hr>
-                    <!-- SNS Link 社交 -->
-                    <ul class="list-inline">
+                <!-- Featured Tags -->
+                
+                <section>
+                    <!-- no hr -->
+                    <h5 class="text-center">
+                        <a href="/tags/">FEATURED TAGS</a>
+                    </h5>
+                    <div class="tags">
                         
+                        <a class="tag" href="/tags/#python"
+                           title="python">python</a>
                         
-                        
-                        <li>
-                            <a target="_blank" href="https://www.zhihu.com/people/ipsyco">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa  fa-stack-1x fa-inverse">知</i>
-                                        </span>
-                            </a>
-                        </li>
-                        
+                    </div>
+                </section>
+                
 
+                <!-- Friends Blog -->
+                
+                <div style="margin-top: 20px;">
+                    <h5 class="text-center">FRIENDS</h5>
+                    <ul class="list-inline text-center">
                         
-                        <li>
-                            <a target="_blank" href="http://weibo.com/1974342964">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
-                        
-
-                        
-                        <li>
-                            <a target="_blank" href="https://github.com/psycoHo">
-                                        <span class="fa-stack fa-lg">
-                                            <i class="fa fa-circle fa-stack-2x"></i>
-                                            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                        </span>
-                            </a>
-                        </li>
-                        
-
+                        <li><a href="http://psyco.cn">南北桥</a></li>
                         
                     </ul>
                 </div>
-            </section>
-
-            <!-- Featured Tags  标签 -->
-            
-            <section>
-                <div class="tags">
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    
-                    <a href="/tags/#shell" title="shell"
-                       rel="2">shell</a>
-                    
-                    
-                    
-                    
-                </div>
-            </section>
-            
-
-            
-            <hr>
-            <h5 style="text-align: center;">Friends</h5>
-            <ul class="list-inline" style="text-align: center;">
                 
-                <li><a href="http://psyco.cn" target="_blank">南北桥</a></li>
-                
-            </ul>
-            
-
+            </div>
         </div>
+
     </div>
-</div>
+</article>
+
+
+<!-- 多说公共JS代码 start (一个网页只需插入一次) -->
+<script type="text/javascript">
+    // dynamic User by Hux
+    var _user = 'psyco';
+
+    // duoshuo comment query.
+    var duoshuoQuery = {short_name: _user};
+    (function () {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';
+        ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0]
+        || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
+</script>
+<!-- 多说公共JS代码 end -->
+
+
+
+
 
 <!-- Footer -->
 <!-- Footer -->
