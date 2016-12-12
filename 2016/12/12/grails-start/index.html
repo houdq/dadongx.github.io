@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        Hello World｜南北桥的博客
+        Grails Quick Start｜南北桥的博客
         
     </title>
 
-    <link rel="canonical" href="http://psyco.cn/2016/11/15/hello-world/">
+    <link rel="canonical" href="http://psyco.cn/2016/12/12/grails-start/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -37,7 +37,7 @@
 <style>
 
     header.intro-header {
-        background-image: url('//o7bkkhiex.bkt.clouddn.com/lion-blur-bg.jpg')
+        background-image: url('undefined')
     }
 </style>
 <!-- hack iOS CSS :active style -->
@@ -147,12 +147,12 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>Hello World</h1>
+                    <h1>Grails Quick Start</h1>
                     
                     <span class="meta">
                          作者 南北桥
                         <span>
-                          日期 2016-11-15
+                          日期 2016-12-12
                          </span>
                     </span>
                     <div class="tags text-center">
@@ -164,7 +164,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            Hello World
+            Grails Quick Start
         </span>
     </div>
 </header>
@@ -175,30 +175,30 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+                <h1 id="Grails-Quick-Start"><a href="#Grails-Quick-Start" class="headerlink" title="Grails Quick Start"></a>Grails Quick Start</h1><h3 id="创建项目"><a href="#创建项目" class="headerlink" title="创建项目"></a>创建项目</h3><p>使用 grails 命令 创建项目:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grails create-app my-project</div></pre></td></tr></table></figure></p>
+<p>项目目录 :<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div></pre></td><td class="code"><pre><div class="line">%PROJECT_HOME%</div><div class="line">    + grails-app</div><div class="line">       + conf                 ---&gt; location of configuration artifacts </div><div class="line">           + hibernate        ---&gt; optional hibernate config</div><div class="line">           + spring           ---&gt; optional spring config</div><div class="line">       + controllers          ---&gt; location of controller artifacts</div><div class="line">       + domain               ---&gt; location of domain classes</div><div class="line">       + i18n                 ---&gt; location of message bundles for i18n</div><div class="line">       + services             ---&gt; location of services</div><div class="line">       + taglib               ---&gt; location of tag libraries</div><div class="line">       + util                 ---&gt; location of special utility classes </div><div class="line">       + views                ---&gt; location of views</div><div class="line">           + layouts          ---&gt; location of layouts</div><div class="line">   + lib</div><div class="line">   + scripts                  ---&gt; scripts</div><div class="line">   + src</div><div class="line">       + groovy               ---&gt; optional; location for Groovy source files</div><div class="line">                                   (of types other than those in grails-app/*)</div><div class="line">       + java                 ---&gt; optional; location for Java source files</div><div class="line">   + test                     ---&gt; generated test classes</div><div class="line">   + web-app</div><div class="line">       + WEB-INF</div></pre></td></tr></table></figure></p>
+<h3 id="创建领域类"><a href="#创建领域类" class="headerlink" title="创建领域类"></a>创建领域类</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cd my-project</div><div class="line">grails create-domain-class org.example.Book</div></pre></td></tr></table></figure>
+<p>编辑类 添加一些属性<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">package org.example</div><div class="line">class Book &#123;</div><div class="line">    String title</div><div class="line">    String author</div><div class="line"></div><div class="line">    static constraints = &#123;</div><div class="line">        title(blank: false)</div><div class="line">        author(blank: false)</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>constraints函数中可以添加一些约束</p>
+<h3 id="创建控制器"><a href="#创建控制器" class="headerlink" title="创建控制器"></a>创建控制器</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grails create-controller org.example.Book // Note the capital B</div></pre></td></tr></table></figure>
+<p>简单的 controller<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">  def index=&#123;</div><div class="line">      //在控制器中定义的任何一个闭包都会暴露成一个 url</div><div class="line">render &quot;Hello World&quot;</div><div class="line">  &#125;</div></pre></td></tr></table></figure></p>
+<p>你会看到 “Hello World”。</p>
+<p>来个更高级的：<br>如果定义了scaffold grails 会给自动创建 CUDR 的逻辑是不是很神奇？</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">package org.example</div><div class="line">class BookController &#123;</div><div class="line">    def scaffold = Book // Note the capital &quot;B&quot;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">grails run-app</div></pre></td></tr></table></figure>
+<p>访问 <a href="http://localhost:8080" target="_blank" rel="external">http://localhost:8080</a> 你看到了什么 BookController 点进去就是它的 CRUD 了</p>
+<p>访问 <a href="http://localhost:8080/test" target="_blank" rel="external">http://localhost:8080/test</a>  Hello world</p>
+<h3 id="连接数据库"><a href="#连接数据库" class="headerlink" title="连接数据库"></a>连接数据库</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">dataSource:</div><div class="line">    pooled: true</div><div class="line">    jmxExport: true</div><div class="line">    driverClassName: org.postgresql.Driver</div><div class="line">    username: changeme</div><div class="line">    password: yintai@changeme</div><div class="line">    </div><div class="line">environments:</div><div class="line">    development:</div><div class="line">        dataSource:</div><div class="line">            dbCreate: create-drop</div><div class="line">            url: jdbc:postgresql://10.32.150.91:5432/psyco</div></pre></td></tr></table></figure>
 
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/11/16/test/" data-toggle="tooltip" data-placement="top"
-                           title="cmd 传入参数">&larr; Previous Post</a>
-                    </li>
-                    
                     
                     <li class="next">
-                        <a href="/2016/11/13/psyhton-执行-exe/" data-toggle="tooltip" data-placement="top"
-                           title="psyhton 执行 exe">Next Post &rarr;</a>
+                        <a href="/2016/12/01/hello-world/" data-toggle="tooltip" data-placement="top"
+                           title="Hello World">Next Post &rarr;</a>
                     </li>
                     
                 </ul>
@@ -207,9 +207,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                         data-thread-key="2016/11/15/hello-world/"
-                         data-title="Hello World"
-                         data-url="http://psyco.cn/2016/11/15/hello-world/">
+                         data-thread-key="2016/12/12/grails-start/"
+                         data-title="Grails Quick Start"
+                         data-url="http://psyco.cn/2016/12/12/grails-start/">
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -221,7 +221,7 @@
 
             <div class="hidden-xs col-sm-3 toc-col">
                 <div class="toc-wrap">
-                    <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+                    <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Grails-Quick-Start"><span class="toc-text">Grails Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#创建项目"><span class="toc-text">创建项目</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建领域类"><span class="toc-text">创建领域类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#创建控制器"><span class="toc-text">创建控制器</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#运行"><span class="toc-text">运行</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#连接数据库"><span class="toc-text">连接数据库</span></a></li></ol></li></ol></li></ol>
                 </div>
             </div>
         </div>
