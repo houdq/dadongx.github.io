@@ -18,11 +18,11 @@
     <link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.css">
     <title>
         
-        JAVA 优化思路草稿｜holdq
+        算法-三位数反转｜holdq
         
     </title>
 
-    <link rel="canonical" href="http://psyco.cn/2016/11/04/JAVA-优化思路草稿/">
+    <link rel="canonical" href="http://psyco.cn/2019/05/23/算法-三位数反转/">
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/css/bootstrap.min.css">
@@ -147,18 +147,18 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 text-center">
                 <div class="post-heading">
-                    <h1>JAVA 优化思路草稿</h1>
+                    <h1>算法-三位数反转</h1>
                     
                     <span class="meta">
                          作者 HoldQ
                         <span>
-                          日期 2016-11-04
+                          日期 2019-05-23
                          </span>
                     </span>
                     <div class="tags text-center">
                         
-                        <a class="tag" href="/tags/#java"
-                           title="java">java</a>
+                        <a class="tag" href="/tags/#算法"
+                           title="算法">算法</a>
                         
                     </div>
                 </div>
@@ -167,7 +167,7 @@
     </div>
     <div class="post-title-haojen">
         <span>
-            JAVA 优化思路草稿
+            算法-三位数反转
         </span>
     </div>
 </header>
@@ -178,19 +178,26 @@
         <div class="row">
             <!-- Post Container -->
             <div class="col-lg-8 col-lg-offset-1 col-sm-9 post-container">
-                <p>打算对 JAVA 性能方面有所了解，但是不知从何入手，自己画了张脑图，先作为思路</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/2927656-2b79d4d60f75bb60.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="编辑 by百度脑图"></p>
+                <p>题目:反转一个只有3位数的整数。</p>
+<p>样例 1: 输入: number = 123 输出: 321</p>
+<p>样例 2: 输入: number = 900<br>输出: 9</p>
+<p>注意事项:</p>
+<p>你可以假设输入一定是一个只有三位数的整数，这个整数大于等于100，小于1000。</p>
+<p>思路:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">分别获取个十百数字,颠倒一下即可.</div></pre></td></tr></table></figure>
+<p>代码实现:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div></pre></td><td class="code"><pre><div class="line">public class Solution &#123;</div><div class="line">    /**</div><div class="line">     * @param number: A 3-digit number.</div><div class="line">     * @return: Reversed number.</div><div class="line">     */</div><div class="line">    public int reverseInteger(int number) &#123;</div><div class="line">        // write your code here</div><div class="line">        int a = number/100;</div><div class="line">        int b = number/10;</div><div class="line">           b -= a * 10;</div><div class="line">        int c = number % 10;</div><div class="line">        </div><div class="line">        return a+(b*10)+(c*100);</div><div class="line">    &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>推荐一个刷题的地方: <a href="https://www.lintcode.com/" target="_blank" rel="external">LintCode</a></p>
 
                 <hr>
                 
 
                 <ul class="pager">
                     
-                    <li class="previous">
-                        <a href="/2016/11/10/pxml/" data-toggle="tooltip" data-placement="top"
-                           title="python 编写xml">&larr; Previous Post</a>
-                    </li>
                     
+                    <li class="next">
+                        <a href="/2016/12/12/grails-start/" data-toggle="tooltip" data-placement="top"
+                           title="Grails Quick Start">Next Post &rarr;</a>
+                    </li>
                     
                 </ul>
 
@@ -198,9 +205,9 @@
                 <!-- 多说评论框 start -->
                 <div class="comment">
                     <div class="ds-thread"
-                         data-thread-key="2016/11/04/JAVA-优化思路草稿/"
-                         data-title="JAVA 优化思路草稿"
-                         data-url="http://psyco.cn/2016/11/04/JAVA-优化思路草稿/">
+                         data-thread-key="2019/05/23/算法-三位数反转/"
+                         data-title="算法-三位数反转"
+                         data-url="http://psyco.cn/2019/05/23/算法-三位数反转/">
                     </div>
                 </div>
                 <!-- 多说评论框 end -->
@@ -234,8 +241,8 @@
                     </h5>
                     <div class="tags">
                         
-                        <a class="tag" href="/tags/#java"
-                           title="java">java</a>
+                        <a class="tag" href="/tags/#算法"
+                           title="算法">算法</a>
                         
                     </div>
                 </section>
