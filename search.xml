@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>1</title>
+      <link href="2020/11/25/1-1/"/>
+      <url>2020/11/25/1-1/</url>
+      
+        <content type="html"><![CDATA[<p>dsf </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 100 </tag>
+            
+            <tag> 吐槽 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-generator-search</title>
+      <link href="2020/11/25/test/"/>
+      <url>2020/11/25/test/</url>
+      
+        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Hexo</title>
+      <link href="2020/11/25/hello-world/"/>
+      <url>2020/11/25/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>2</title>
+      <link href="2020/11/25/2/"/>
+      <url>2020/11/25/2/</url>
+      
+        <content type="html"><![CDATA[<p>本文围绕两件事</p><blockquote><p>被偏爱的总是有恃无恐</p></blockquote><p>第一件是我拿可爱的女儿。宝宝开始喃喃自语，好像是在叫爸爸了，看着她一点点开始变大，心里很高兴，也很害怕，她慢一些长大吧。 于司令晚上也跟我投诉，“你家嘟嘟越来约不乖了”。我问咋了？她一脸委屈的跟我诉苦，”你家嘟嘟咬我咪咪可疼了，昨晚给我咬哭了“。哈哈哈。我说下次你揍她，就说我让的。</p><blockquote><p>窗外不只风景，还有你和未来的视界</p></blockquote><p>第二件事，跟于司令一起张罗搬家买点必须零碎，昨晚闹还闹得不欢而散，今晚一起出谋划策，畅所欲言，虽然不是给自己的房子置办，起码也是一起的小窝吧，于司令一直期望一个温馨的小家，此时北漂的我们来说，虽然有些苦难，但是只要我们在一起努力，终究会实现。感谢于司令的包容和鼓励。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 100 </tag>
+            
+            <tag> Grow up </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Can&#39;t set cookie dm_task_set_cookie failed 错误处理</title>
+      <link href="2020/11/25/1/"/>
+      <url>2020/11/25/1/</url>
+      
+        <content type="html"><![CDATA[<p>Can’t set cookie dm_task_set_cookie failed</p><p>解决：<br>0.到出错误的 服务器 上<br>1.docker ps 查出当前所有运行的 docker 容器，记下来id<br>2.关闭docker服务<br>echo ‘y’ | sudo dmsetup udevcomplete_all<br>3.重启docker服务<br>systemctl restart docker<br>4.依次<br>docker restart  id </p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> bug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
