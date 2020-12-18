@@ -1,0 +1,18 @@
+<div class="valine_comment"></div>
+<!--载入js，在</body>之前插入即可-->
+<!--Leancloud 操作库:-->
+<script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
+<!--Valine 的核心代码库-->
+<script src="//unpkg.com/valine/dist/Valine.min.js"></script>
+<script>
+  new Valine({
+      el: '.valine_comment',
+      app_id: '<%= theme.valine.appid %>',
+      app_key: '<%= theme.valine.appkey %>',
+      placeholder: '<%= theme.valine.placeholder %>',
+      notify: '<%= theme.valine.notify %>',
+      verify: '<%= theme.valine.verify %>',
+    });
+    
+    alert(9);
+</script>

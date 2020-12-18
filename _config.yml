@@ -3,17 +3,17 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Bio Bio
-subtitle: ''
-description: 'Dadongx'
-keywords:
+title: 大东码字
+subtitle: '人生看淡，不服就干'
+description: 'This is a amazing page !'
+keywords: dadong daniel  java Web 
 author: Daniel
-language: cn
+language: zh-CN
 timezone: ''
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://example.com/child' and root as '/child/'
-url: http://example.com
+url: http://dadongx.cn
 root: /
 permalink: :year/:month/:day/:title/
 permalink_defaults:
@@ -69,7 +69,12 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  编程: programming
+  生活: life  
+  工作: work
+  其他: other
 tag_map:
+  生活: life  
 
 # Metadata elements
 ## https://developer.mozilla.org/en-US/docs/Web/HTML/Element/meta
@@ -98,7 +103,9 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+# theme: landscape
+theme: next
+
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
@@ -106,3 +113,17 @@ deploy:
   type: git
   repository: http://github.com/danielhou09/dadongx.github.io.git
   branch: gh-pages
+  customize:
+    show_all_posts: true
+
+leancloud_counter_security:
+  enable_sync: true
+  app_id: Ibq54f164Xm1KrLhU9VLQbOU-gzGzoHsz
+  app_key: YyFagCCh8AgXuinAsLfCQGhv
+  betterPerformance: false
+  # Required for apps from CN region
+  server_url: # <your server url>
+  # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
+  # If you don't care about security in leancloud counter and just want to use it directly
+  # (without hexo-leancloud-counter-security plugin), set `security` to `false`.
+  security: true
