@@ -207,14 +207,14 @@
   </url>
   
   <url>
-    <loc>http://dadongx.cn/tags/juc/</loc>
+    <loc>http://dadongx.cn/tags/idea/</loc>
     <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://dadongx.cn/tags/redis%EF%BC%8C%E7%BC%93%E5%AD%98/</loc>
+    <loc>http://dadongx.cn/tags/juc/</loc>
     <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -235,7 +235,7 @@
   </url>
   
   <url>
-    <loc>http://dadongx.cn/tags/idea/</loc>
+    <loc>http://dadongx.cn/tags/redis%EF%BC%8C%E7%BC%93%E5%AD%98/</loc>
     <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -251,14 +251,14 @@
   </url>
   
   <url>
-    <loc>http://dadongx.cn/categories/%E5%B7%A5%E5%85%B7/</loc>
+    <loc>http://dadongx.cn/categories/idea/</loc>
     <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://dadongx.cn/categories/idea/</loc>
+    <loc>http://dadongx.cn/categories/%E5%B7%A5%E5%85%B7/</loc>
     <lastmod>2021-07-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
