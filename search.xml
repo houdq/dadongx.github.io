@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Hello Hexo</title>
+      <link href="2021/07/05/idea%20always%20Update%20Indices/"/>
+      <url>2021/07/05/idea%20always%20Update%20Indices/</url>
+      
+        <content type="html"><![CDATA[<h1 id="idea-always-Update-Indices"><a href="#idea-always-Update-Indices" class="headerlink" title="idea always Update Indices"></a>idea always Update Indices</h1><h2 id="Open-IntelliJ-IDEA"><a href="#Open-IntelliJ-IDEA" class="headerlink" title="Open IntelliJ IDEA."></a>Open IntelliJ IDEA.</h2><ol><li>Select the File menu.</li><li>Select the Invalidate Caches / Restart… menu. Once selected you get a pop-up with a bunch of options.</li><li>Select Invalidate and Restart. and before doing that make sure you saved all your changes else it might delete some unsaved changes.</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> idea </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title></title>
+      <link href="2021/06/25/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
+      <url>2021/06/25/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>我的规划</p><h1 id="我的规划"><a href="#我的规划" class="headerlink" title="我的规划"></a>我的规划</h1><h2 id="总揽图"><a href="#总揽图" class="headerlink" title="总揽图"></a>总揽图</h2><h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>money</title>
       <link href="2021/05/18/money/"/>
       <url>2021/05/18/money/</url>
