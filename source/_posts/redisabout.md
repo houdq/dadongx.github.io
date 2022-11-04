@@ -3,7 +3,6 @@ title: 你真的会用reids吗？
 date: 2020-12-18 22:29:34
 tags: [redis，缓存] 
 ---
-# 你真的会用redis吗？
 
 什么时候用redis呢?
 ## 缓存
