@@ -108,4 +108,4 @@ deploy:
   type: git
   # repo: ssh://git@github.com:danielhou09/dadongx.github.io.git
   repository: git@github.com:danielhou09/dadongx.github.io.git
-  branch: master
+  branch: gh-pages
