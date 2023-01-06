@@ -121,14 +121,14 @@
   </url>
   
   <url>
-    <loc>http://dadongx.cn/2020/11/25/1-1/</loc>
+    <loc>http://dadongx.cn/2020/11/25/1/</loc>
     
     <lastmod>2020-12-18</lastmod>
     
   </url>
   
   <url>
-    <loc>http://dadongx.cn/2020/11/25/1/</loc>
+    <loc>http://dadongx.cn/2020/11/25/1-1/</loc>
     
     <lastmod>2020-12-18</lastmod>
     
@@ -151,13 +151,6 @@
   </url>
   
   <url>
-    <loc>http://dadongx.cn/tags/%E5%90%90%E6%A7%BD/</loc>
-    <lastmod>2023-01-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>http://dadongx.cn/tags/docker/</loc>
     <lastmod>2023-01-06</lastmod>
     <changefreq>daily</changefreq>
@@ -166,6 +159,13 @@
   
   <url>
     <loc>http://dadongx.cn/tags/bug/</loc>
+    <lastmod>2023-01-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://dadongx.cn/tags/%E5%90%90%E6%A7%BD/</loc>
     <lastmod>2023-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -200,6 +200,13 @@
   </url>
   
   <url>
+    <loc>http://dadongx.cn/tags/idea/</loc>
+    <lastmod>2023-01-06</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>http://dadongx.cn/tags/hexo/</loc>
     <lastmod>2023-01-06</lastmod>
     <changefreq>daily</changefreq>
@@ -208,13 +215,6 @@
   
   <url>
     <loc>http://dadongx.cn/tags/%E6%80%A7%E8%83%BD%E6%B5%8B%E8%AF%95/</loc>
-    <lastmod>2023-01-06</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>http://dadongx.cn/tags/idea/</loc>
     <lastmod>2023-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -251,14 +251,14 @@
 
   
   <url>
-    <loc>http://dadongx.cn/categories/work/</loc>
+    <loc>http://dadongx.cn/categories/idea/</loc>
     <lastmod>2023-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>http://dadongx.cn/categories/idea/</loc>
+    <loc>http://dadongx.cn/categories/work/</loc>
     <lastmod>2023-01-06</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
