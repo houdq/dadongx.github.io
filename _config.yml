@@ -111,7 +111,7 @@ theme: next
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
-  repository: http://github.com/danielhou09/dadongx.github.io.git
+  repository: http://github.com/danielhou09/houdq.github.io.git
   branch: gh-pages
   customize:
     show_all_posts: true
