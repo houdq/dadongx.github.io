@@ -3,7 +3,7 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: Hexo
+title: 不东
 subtitle: '少就是多'
 description: ''
 keywords:
@@ -100,12 +100,12 @@ ignore:
 ## Themes: https://hexo.io/themes/
 # theme: landscape
 # theme: material
-theme: leedom
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: git
   # repo: ssh://git@github.com:danielhou09/dadongx.github.io.git
-  repository: git@github.com:danielhou09/dadongx.github.io.git
+  repository: git@github.com:houdq/dadongx.github.io.git
   branch: gh-pages
