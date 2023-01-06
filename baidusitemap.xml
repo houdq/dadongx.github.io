@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://dadongx.cn/2023/01/06/springboot-docker-demo/</loc>
+    <lastmod>2023-01-06</lastmod>
+  </url>
+  <url>
     <loc>http://dadongx.cn/2021/07/05/idea%20always%20Update%20Indices/</loc>
     <lastmod>2021-07-05</lastmod>
   </url>
