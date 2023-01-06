@@ -607,7 +607,6 @@
     "anymatch" "^2.0.0"
     "async-each" "^1.0.1"
     "braces" "^2.3.2"
-    "fsevents" "^1.2.7"
     "glob-parent" "^3.1.0"
     "inherits" "^2.0.3"
     "is-binary-path" "^1.0.0"
@@ -626,7 +625,6 @@
   dependencies:
     "anymatch" "~3.1.1"
     "braces" "~3.0.2"
-    "fsevents" "~2.1.2"
     "glob-parent" "~5.1.0"
     "is-binary-path" "~2.1.0"
     "is-glob" "~4.0.1"
@@ -1518,10 +1516,6 @@
   "integrity" "sha1-shBrJlR7Iy8BlduGPLXV/4Un/TY="
   "resolved" "https://registry.npm.taobao.org/hexo-bunyan/download/hexo-bunyan-1.0.0.tgz"
   "version" "1.0.0"
-  dependencies:
-    "moment" "^2.10.6"
-    "mv" "~2"
-    "safe-json-stringify" "~1"
   optionalDependencies:
     "moment" "^2.10.6"
     "mv" "~2"
@@ -2789,7 +2783,6 @@
   dependencies:
     "a-sync-waterfall" "^1.0.0"
     "asap" "^2.0.3"
-    "chokidar" "^3.3.0"
     "commander" "^5.1.0"
   optionalDependencies:
     "chokidar" "^3.3.0"
@@ -2934,8 +2927,6 @@
   "integrity" "sha1-c8NACvxYqCPdfu0CP44c6f2Jd/o="
   "resolved" "https://registry.npm.taobao.org/prismjs/download/prismjs-1.22.0.tgz"
   "version" "1.22.0"
-  dependencies:
-    "clipboard" "^2.0.0"
   optionalDependencies:
     "clipboard" "^2.0.0"
 
@@ -3788,7 +3779,6 @@
   "version" "2.8.29"
   dependencies:
     "source-map" "~0.5.1"
-    "uglify-to-browserify" "~1.0.0"
     "yargs" "~3.10.0"
   optionalDependencies:
     "uglify-to-browserify" "~1.0.0"
