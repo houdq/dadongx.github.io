@@ -16,5 +16,9 @@ share: Share
 powered_by: Powered by
 rss_feed: RSS Feed
 category: Category
+<<<<<<< HEAD
 tag: Tag
 views: 热度
+=======
+tag: Tag
+>>>>>>> dev

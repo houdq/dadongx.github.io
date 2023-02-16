@@ -4,11 +4,166 @@
   
     
     <entry>
-      <title>Hello Hexo</title>
-      <link href="2023/02/15/hello-world/"/>
-      <url>2023/02/15/hello-world/</url>
+      <title>diary</title>
+      <link href="2023/02/16/diary-2/"/>
+      <url>2023/02/16/diary-2/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>diary</title>
+      <link href="2023/02/16/diary-1/"/>
+      <url>2023/02/16/diary-1/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>diary</title>
+      <link href="2023/02/16/diary/"/>
+      <url>2023/02/16/diary/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>0216 restart</title>
+      <link href="2023/02/16/0216-restart/"/>
+      <url>2023/02/16/0216-restart/</url>
+      
+        <content type="html"><![CDATA[<h1 id="restart"><a href="#restart" class="headerlink" title="restart"></a>restart</h1><p>xxxx</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> diary </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java 中的锁解决什么问题?</title>
+      <link href="2023/02/15/java-%E4%B8%AD%E7%9A%84%E9%94%81%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/"/>
+      <url>2023/02/15/java-%E4%B8%AD%E7%9A%84%E9%94%81%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/</url>
+      
+        <content type="html"><![CDATA[<p>Java中的锁是一种同步机制，可以确保多个线程之间共享资源的互斥访问，从而避免出现数据竞争和线程安全问题。使用锁的主要目的是保证代码的正确性和可靠性。</p><p>Java中的锁能够解决以下实际问题：</p><p>数据竞争：在多线程环境中，如果多个线程同时访问共享数据，就会产生数据竞争问题。使用锁可以确保同一时间只有一个线程可以访问共享资源，避免数据竞争和数据不一致的问题。<br>线程安全：Java中的锁可以确保线程安全，避免多个线程之间的干扰和竞争，从而保证代码的正确性和可靠性。<br>性能优化：Java中的锁可以用于优化程序的性能，比如使用读写锁来实现对数据的读写分离，从而提高程序的并发性能。<br>死锁问题：Java中的锁可以用于避免死锁问题，比如使用一致性的加锁顺序，避免出现循环依赖的情况。<br>总之，Java中的锁机制是保证多线程并发安全的重要手段，可以用于解决数据竞争、线程安全、性能优化和死锁问题等实际问题。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> java 锁 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java怎找工作</title>
+      <link href="2023/02/15/java%E6%80%8E%E6%89%BE%E5%B7%A5%E4%BD%9C/"/>
+      <url>2023/02/15/java%E6%80%8E%E6%89%BE%E5%B7%A5%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<p>java 程序员怎么做找工作</p><p>在网络招聘网站上搜索职位。在中国，像智联招聘、前程无忧、猎聘网等招聘网站上，有许多公司在招聘JAVA程序员。通过这些网站可以快速找到自己合适的工作。</p><p>关注社交媒体和专业网站。<br>加入一些面向JAVA程序员的社交媒体和专业网站，如 CSDN、51CTO 等，并关注相关领域的微信公众号或QQ群。这些渠道可能会发布一些招聘信息，并且也能让您了解最新技术动态。</p><p>参加招聘会和技术交流会。<br>许多城市都会举办招聘会和技术交流会，这是一个很好的了解行业动态、与公司和招聘人员交流的机会。</p><p>向自己熟悉的人求助。<br>如果您有一些熟悉的朋友或前同事在相关公司工作，可以向他们求助，了解招聘情况和有关的信息。这也可能是找到合适工作的快捷方式。</p><p>通过自己的作品证明能力。<br>如果您已经有一些独立完成的项目或者参与的开源项目，可以在GitHub等平台上分享您的作品，向雇主展示自己的实际能力。</p><p>提高自身的技能和水平。保持不断学习和提升自身的技术能力和素养，可以增加自己在市场上的竞争力，并提高找到合适工作的机会。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>springboot-docker</title>
+      <link href="2023/01/07/springboot-docker/"/>
+      <url>2023/01/07/springboot-docker/</url>
+      
+        <content type="html"><![CDATA[<h1 id="docker-run-springboot"><a href="#docker-run-springboot" class="headerlink" title="docker run springboot"></a>docker run springboot</h1><h2 id="创建springboot-项目"><a href="#创建springboot-项目" class="headerlink" title="创建springboot 项目"></a>创建springboot 项目</h2><p>创建项目 从 <a href="https://start.spring.io/">https://start.spring.io/</a></p><p>启动类配置如下：<code>src/main/java/hello/Application.java</code></p><pre><code>package hello;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RestController;@SpringBootApplication@RestControllerpublic class DemoApplication &#123;    public static void main(String[] args) &#123;        SpringApplication.run(DemoApplication.class, args);    &#125;    //return current time    @RequestMapping(&quot;/time&quot;)    public String time() &#123;        return new Date().toString();    &#125;&#125;</code></pre><h2 id="docker-启动"><a href="#docker-启动" class="headerlink" title="docker 启动"></a>docker 启动</h2><h3 id="dockerfile-编写"><a href="#dockerfile-编写" class="headerlink" title="dockerfile 编写"></a>dockerfile 编写</h3><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> openjdk:<span class="number">8</span>-jdk-alpine</span><br><span class="line"><span class="keyword">ARG</span> JAR_FILE=target/*.jar</span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> <span class="variable">$&#123;JAR_FILE&#125;</span> app.jar</span></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="bash"> [<span class="string">&quot;java&quot;</span>,<span class="string">&quot;-jar&quot;</span>,<span class="string">&quot;/app.jar&quot;</span>]</span></span><br></pre></td></tr></table></figure><ol><li>将app.jar拷贝到容器</li><li>引用 jdk</li></ol><h3 id="build-amp-run"><a href="#build-amp-run" class="headerlink" title="build&amp;run"></a>build&amp;run</h3><p><code>docker build -t ddx/demo</code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">ddx/demo     latest    1b4b076fd19f   2 hours ago   122MB</span><br><span class="line">mysql        latest    7484689f290f   4 weeks ago   538MB</span><br><span class="line">jenkins      2.60.3    cd14cecfdb3a   4 years ago   696MB</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><code>docker run -p 8080:8080 </code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ docker ps</span><br><span class="line">CONTAINER ID   IMAGE      COMMAND                CREATED             STATUS             PORTS                    NAMES</span><br><span class="line">62fa2f9c4bfc   ddx/demo   <span class="string">&quot;java -jar /app.jar&quot;</span>   About an hour ago   Up About an hour   0.0.0.0:8080-&gt;8080/tcp hardcore_zhukovsky</span><br></pre></td></tr></table></figure><p>访问 localhost:8080/time</p><pre><code>➜  ~ curl localhost:8080/timeFri Jan 06 06:18:31 GMT 2023%</code></pre><p>本文参考： <a href="https://spring.io/guides/gs/spring-boot-docker/">https://spring.io/guides/gs/spring-boot-docker/</a></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>springmvcvswebflux</title>
+      <link href="2023/01/06/springmvcvswebflux/"/>
+      <url>2023/01/06/springmvcvswebflux/</url>
+      
+        <content type="html"><![CDATA[<p>Spring WebFlux 和 Spring MVC 对比分析</p><p>什么是 Spring WebFlux</p><p>Spring MVC is built on the Servlet API and uses a synchronous blocking I/O architecture whth a one-request-per-thread model.</p><p>Spring MVC 构建于 Servlet API 之上，使用的是同步阻塞式 I/O 模型，什么是同步阻塞式 I/O 模型呢？就是说，每一个请求对应一个线程去处理。</p><p>Spring WebFlux is a non-blocking web framework built from the ground up to take advantage of multi-core, next-generation processors and handle massive numbers of concurrent connections.</p><p>Spring WebFlux 是一个异步非阻塞式的 Web 框架，它能够充分利用多核 CPU 的硬件资源去处理大量的并发请求。</p><p>WebFlux 的优势&amp;提升性能?</p><p>Reactive and non-blocking generally do not make applications run faster.</p><p>WebFlux 并不能使接口的响应时间缩短，它仅仅能够提升吞吐量和伸缩性。</p><p>WebFlux 应用场景</p><p>PS: IO 密集型包括：磁盘IO密集型, 网络IO密集型，微服务网关就属于网络 IO 密集型，使用异步非阻塞式编程模型，能够显著地提升网关对下游服务转发的吞吐量。</p><p>选 WebFlux 还是 Spring MVC?</p><p>WebFlux 不是 Spring MVC 的替代方案！</p><p>首先是吞吐量</p><p>随着每个请求的被处理时间越长、并发请求的量级越大，WebFlux 相比 SpringMVC 的整体吞吐量高的越多，平均的请求响应时间越短。如下图所示</p><p>吞吐量大了，意味着单位时间内可以处理的请求数变多了，比如原来 1w 个请求 10 秒处理完，现在 10w 个请求也是 10 秒处理完，就代表吞吐上去了。注意，是吞吐上去了，不代表单次请求快了，单次请求的速度和原来一样。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> springmvc </tag>
+            
+            <tag> weblux </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>xxb</title>
+      <link href="2023/01/06/xxb/"/>
+      <url>2023/01/06/xxb/</url>
+      
+        <content type="html"><![CDATA[<p>XBB 奥密克戎的新版本，瞎哔哔 这病毒的名字起的真好!<br>依我看接下来疫情的走势，就冲这个名字大家一定能发大财！<br>如果人一旦正经八百，对结果很在意的时候，反而达不到预期的效果。<br>所以处在各行各业的你都要抱着瞎哔哔的心态，做好了赚钱了，是你牛批，做不好没赚到钱这一定是疫情搞得鬼！<br>作为打工人，也要保持瞎比比的松驰感，别人躺平我卷！别人卷的时候我躺平！<br>记住，瞎哔哔是一种人生态度！</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 疫情 xbb 人间清醒 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的规划</title>
+      <link href="2023/01/06/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
+      <url>2023/01/06/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>我的规划</p><hr><p>认知升级：不断学习去升级认知，做更好的自己。<br>长期主义：做有长期收益的事情，比如写作与投资。<br>积极分享：分享个人经验积极影响他人。</p><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
       
       
       <categories>
@@ -31,24 +186,11 @@
     
     
     <entry>
-      <title></title>
-      <link href="2023/01/06/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
-      <url>2023/01/06/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
-      
-        <content type="html"><![CDATA[<p>我的规划</p><h1 id="我的规划"><a href="#我的规划" class="headerlink" title="我的规划"></a>我的规划</h1><h2 id="总揽图"><a href="#总揽图" class="headerlink" title="总揽图"></a>总揽图</h2><h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
-      
-      
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>hexo-generator-search</title>
       <link href="2023/01/06/test/"/>
       <url>2023/01/06/test/</url>
       
-        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
@@ -116,16 +258,35 @@
     
     <entry>
       <title>springboot-docker-demo</title>
-      <link href="2023/01/06/springboot-docker-demo/"/>
-      <url>2023/01/06/springboot-docker-demo/</url>
+      <link href="2023/01/05/springboot-docker-demo/"/>
+      <url>2023/01/05/springboot-docker-demo/</url>
       
-        <content type="html"><![CDATA[<h1 id="docker-run-springboot"><a href="#docker-run-springboot" class="headerlink" title="docker run springboot"></a>docker run springboot</h1><h2 id="创建springboot-项目"><a href="#创建springboot-项目" class="headerlink" title="创建springboot 项目"></a>创建springboot 项目</h2><p>创建项目 从 <a href="https://start.spring.io/">https://start.spring.io/</a></p><p>启动类配置如下：<code>src/main/java/hello/Application.java</code></p><pre><code>package hello;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RestController;@SpringBootApplication@RestControllerpublic class DemoApplication &#123;    public static void main(String[] args) &#123;        SpringApplication.run(DemoApplication.class, args);    &#125;    //return current time    @RequestMapping(&quot;/time&quot;)    public String time() &#123;        return new Date().toString();    &#125;&#125;</code></pre><h2 id="docker-启动"><a href="#docker-启动" class="headerlink" title="docker 启动"></a>docker 启动</h2><h3 id="dockerfile-编写"><a href="#dockerfile-编写" class="headerlink" title="dockerfile 编写"></a>dockerfile 编写</h3><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> openjdk:<span class="number">8</span>-jdk-alpine</span><br><span class="line"><span class="keyword">ARG</span> JAR_FILE=target/*.jar</span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> <span class="variable">$&#123;JAR_FILE&#125;</span> app.jar</span></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="bash"> [<span class="string">&quot;java&quot;</span>,<span class="string">&quot;-jar&quot;</span>,<span class="string">&quot;/app.jar&quot;</span>]</span></span><br></pre></td></tr></table></figure><ol><li>将app.jar拷贝到容器</li><li>引用 jdk</li></ol><h3 id="build-amp-run"><a href="#build-amp-run" class="headerlink" title="build&amp;run"></a>build&amp;run</h3><p><code>docker build -t ddx/demo</code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">ddx/demo     latest    1b4b076fd19f   2 hours ago   122MB</span><br><span class="line">mysql        latest    7484689f290f   4 weeks ago   538MB</span><br><span class="line">jenkins      2.60.3    cd14cecfdb3a   4 years ago   696MB</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><code>docker run -p 8080:8080 </code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ docker ps</span><br><span class="line">CONTAINER ID   IMAGE      COMMAND                CREATED             STATUS             PORTS                    NAMES</span><br><span class="line">62fa2f9c4bfc   ddx/demo   <span class="string">&quot;java -jar /app.jar&quot;</span>   About an hour ago   Up About an hour   0.0.0.0:8080-&gt;8080/tcp hardcore_zhukovsky</span><br></pre></td></tr></table></figure><p>访问 localhost:8080/time</p><pre><code>➜  ~ curl localhost:8080/timeFri Jan 06 06:18:31 GMT 2023%</code></pre><p>本文参考： <a href="https://spring.io/guides/gs/spring-boot-docker/">https://spring.io/guides/gs/spring-boot-docker/</a></p>]]></content>
+        <content type="html"><![CDATA[<p> docker run springboot</p><h2 id="创建springboot-项目"><a href="#创建springboot-项目" class="headerlink" title="创建springboot 项目"></a>创建springboot 项目</h2><p>创建项目 从 <a href="https://start.spring.io/">https://start.spring.io/</a></p><p>启动类配置如下：<code>src/main/java/hello/Application.java</code></p><pre><code>package hello;import org.springframework.boot.SpringApplication;import org.springframework.boot.autoconfigure.SpringBootApplication;import org.springframework.web.bind.annotation.RequestMapping;import org.springframework.web.bind.annotation.RestController;@SpringBootApplication@RestControllerpublic class DemoApplication &#123;    public static void main(String[] args) &#123;        SpringApplication.run(DemoApplication.class, args);    &#125;    //return current time    @RequestMapping(&quot;/time&quot;)    public String time() &#123;        return new Date().toString();    &#125;&#125;</code></pre><h2 id="docker-启动"><a href="#docker-启动" class="headerlink" title="docker 启动"></a>docker 启动</h2><h3 id="dockerfile-编写"><a href="#dockerfile-编写" class="headerlink" title="dockerfile 编写"></a>dockerfile 编写</h3><figure class="highlight dockerfile"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">FROM</span> openjdk:<span class="number">8</span>-jdk-alpine</span><br><span class="line"><span class="keyword">ARG</span> JAR_FILE=target/*.jar</span><br><span class="line"><span class="keyword">COPY</span><span class="bash"> <span class="variable">$&#123;JAR_FILE&#125;</span> app.jar</span></span><br><span class="line"><span class="keyword">ENTRYPOINT</span><span class="bash"> [<span class="string">&quot;java&quot;</span>,<span class="string">&quot;-jar&quot;</span>,<span class="string">&quot;/app.jar&quot;</span>]</span></span><br></pre></td></tr></table></figure><ol><li>将app.jar拷贝到容器</li><li>引用 jdk</li></ol><h3 id="build-amp-run"><a href="#build-amp-run" class="headerlink" title="build&amp;run"></a>build&amp;run</h3><p><code>docker build -t ddx/demo</code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ docker images</span><br><span class="line">REPOSITORY   TAG       IMAGE ID       CREATED       SIZE</span><br><span class="line">ddx/demo     latest    1b4b076fd19f   2 hours ago   122MB</span><br><span class="line">mysql        latest    7484689f290f   4 weeks ago   538MB</span><br><span class="line">jenkins      2.60.3    cd14cecfdb3a   4 years ago   696MB</span><br><span class="line"></span><br></pre></td></tr></table></figure><p><code>docker run -p 8080:8080 </code></p><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">➜  ~ docker ps</span><br><span class="line">CONTAINER ID   IMAGE      COMMAND                CREATED             STATUS             PORTS                    NAMES</span><br><span class="line">62fa2f9c4bfc   ddx/demo   <span class="string">&quot;java -jar /app.jar&quot;</span>   About an hour ago   Up About an hour   0.0.0.0:8080-&gt;8080/tcp hardcore_zhukovsky</span><br></pre></td></tr></table></figure><p>访问 localhost:8080/time</p><pre><code>➜  ~ curl localhost:8080/timeFri Jan 06 06:18:31 GMT 2023%</code></pre><p>本文参考： <a href="https://spring.io/guides/gs/spring-boot-docker/">https://spring.io/guides/gs/spring-boot-docker/</a></p>]]></content>
       
       
       
         <tags>
             
             <tag> docker </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>one day</title>
+      <link href="2022/11/04/one-day/"/>
+      <url>2022/11/04/one-day/</url>
+      
+        <content type="html"><![CDATA[<p>1988年7月15日，一所大学为毕业生的狂热所充盈。籍着这股躁动，轻浮的德克斯特（吉姆·斯特吉斯 Jim Sturgess 饰）穿过层层人墙，寻找可以与之共度这最后狂欢与浪漫之夜的尤物。他将目光锁定在艾玛（安妮·海瑟薇 Anne Hathaway 饰）的身上，一个来自普 通工薪家庭的聪慧女孩。然而短短的交流过后，他们之间什么也没发生，却又注定改变了彼此的一生。在之后的岁月里，两人以友人知己的身份时聚时散，彼此分享着人生的苦辣酸甜和各种感悟。德克斯特经历着事业和婚姻的起落，艾玛品味着底层人生的辛酸。他们是远在天边心也紧紧相连的知己，是深锁心中最为笃真却相隔最远的爱恋……</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> life </tag>
             
         </tags>
       
@@ -159,7 +320,7 @@
       <link href="2020/12/18/redisabout/"/>
       <url>2020/12/18/redisabout/</url>
       
-        <content type="html"><![CDATA[<h1 id="你真的会用redis吗？"><a href="#你真的会用redis吗？" class="headerlink" title="你真的会用redis吗？"></a>你真的会用redis吗？</h1><p>什么时候用redis呢?</p><h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存现在是几乎每个中大型网站的比啥技。合理的利用缓存不仅能提升网站的访问速度，还能大大降低数据库压力。 redis的key-value键值过期机制， 提供了灵活的键淘汰策略 ，所以redis应用场景特别的多。</p><h2 id="排行榜"><a href="#排行榜" class="headerlink" title="排行榜"></a>排行榜</h2><p>很多网站都有排行榜，如京东的月度销量，商品的最新排行。 redis提供的有序集合数据类型能实现各种复杂排行榜的应用。 </p><h2 id="计数器"><a href="#计数器" class="headerlink" title="计数器"></a>计数器</h2><p>什么是计数器？<br>电商网站的浏览量、视频的播放量 。为了保证实时有效，每次浏览都得+1. 而此时如果并发量比较高的，每次访问数据库 无是种挑战和压力。</p><p>redis提供的incr命令来实现计数器，内存操作性能非常好。</p><p>非常适用于这种场景。</p><h2 id="分布式会话"><a href="#分布式会话" class="headerlink" title="分布式会话"></a>分布式会话</h2><p>集群模式下，在应用不多的情况下，一般使用容器自带的session复制功能就能满足，当应用相对复杂的系统中，就会搭建以redisd等内存数据库为中心的缓存session服务 ，redis 不再由容器管理，而是ssession服务以及内存管理。</p><h2 id="分布式锁"><a href="#分布式锁" class="headerlink" title="分布式锁"></a>分布式锁</h2><p>很多互联网技术中都实现了 分布式技术。</p><p>分布式技术带来的技术挑战是对同一个资源的并发访问， 如全局id，减库存，秒杀场景。</p><p>并发量不大的场景可以使用乐观锁，悲观锁。但是并发量高的场合中，数据路锁的思路不太理想，降低了db的性能。</p><p>我们这时候可以利用redis的setnx 编写分布式的锁。如果设置返回 1 说明设置成功，否则获取锁失败。</p><h2 id="社交网络"><a href="#社交网络" class="headerlink" title="社交网络"></a>社交网络</h2><p>点赞 踩 关注/被关注 共同好友等社交网络基本要求下，传统的关系数据库很难存储。 </p><p>redis提供的哈希、集合等数据结构能很方便的实现这些功能</p><h2 id="最新列表"><a href="#最新列表" class="headerlink" title="最新列表"></a>最新列表</h2><p>Lpush可以在列表头部插入一个内容id作为关键字， LTRIM可以限制数量。这样列表永远为n个id，无需查询最新的列表，直接根据id去找对应的内容即可</p><h2 id="消息系统"><a href="#消息系统" class="headerlink" title="消息系统"></a>消息系统</h2><p>MQ-消息队列是大型网站必备的中间件。 主要用于业务解耦 流量削峰及异步处理，可实现简单的消息系统。</p>]]></content>
+        <content type="html"><![CDATA[<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD</p><h1 id="你真的会用redis吗？"><a href="#你真的会用redis吗？" class="headerlink" title="你真的会用redis吗？"></a>你真的会用redis吗？</h1><p>=======</p><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><blockquote><p>dev</p></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote></blockquote><p>什么时候用redis呢?</p><h2 id="缓存"><a href="#缓存" class="headerlink" title="缓存"></a>缓存</h2><p>缓存现在是几乎每个中大型网站的比啥技。合理的利用缓存不仅能提升网站的访问速度，还能大大降低数据库压力。 redis的key-value键值过期机制， 提供了灵活的键淘汰策略 ，所以redis应用场景特别的多。</p><h2 id="排行榜"><a href="#排行榜" class="headerlink" title="排行榜"></a>排行榜</h2><p>很多网站都有排行榜，如京东的月度销量，商品的最新排行。 redis提供的有序集合数据类型能实现各种复杂排行榜的应用。 </p><h2 id="计数器"><a href="#计数器" class="headerlink" title="计数器"></a>计数器</h2><p>什么是计数器？<br>电商网站的浏览量、视频的播放量 。为了保证实时有效，每次浏览都得+1. 而此时如果并发量比较高的，每次访问数据库 无是种挑战和压力。</p><p>redis提供的incr命令来实现计数器，内存操作性能非常好。</p><p>非常适用于这种场景。</p><h2 id="分布式会话"><a href="#分布式会话" class="headerlink" title="分布式会话"></a>分布式会话</h2><p>集群模式下，在应用不多的情况下，一般使用容器自带的session复制功能就能满足，当应用相对复杂的系统中，就会搭建以redisd等内存数据库为中心的缓存session服务 ，redis 不再由容器管理，而是ssession服务以及内存管理。</p><h2 id="分布式锁"><a href="#分布式锁" class="headerlink" title="分布式锁"></a>分布式锁</h2><p>很多互联网技术中都实现了 分布式技术。</p><p>分布式技术带来的技术挑战是对同一个资源的并发访问， 如全局id，减库存，秒杀场景。</p><p>并发量不大的场景可以使用乐观锁，悲观锁。但是并发量高的场合中，数据路锁的思路不太理想，降低了db的性能。</p><p>我们这时候可以利用redis的setnx 编写分布式的锁。如果设置返回 1 说明设置成功，否则获取锁失败。</p><h2 id="社交网络"><a href="#社交网络" class="headerlink" title="社交网络"></a>社交网络</h2><p>点赞 踩 关注/被关注 共同好友等社交网络基本要求下，传统的关系数据库很难存储。 </p><p>redis提供的哈希、集合等数据结构能很方便的实现这些功能</p><h2 id="最新列表"><a href="#最新列表" class="headerlink" title="最新列表"></a>最新列表</h2><p>Lpush可以在列表头部插入一个内容id作为关键字， LTRIM可以限制数量。这样列表永远为n个id，无需查询最新的列表，直接根据id去找对应的内容即可</p><h2 id="消息系统"><a href="#消息系统" class="headerlink" title="消息系统"></a>消息系统</h2><p>MQ-消息队列是大型网站必备的中间件。 主要用于业务解耦 流量削峰及异步处理，可实现简单的消息系统。</p>]]></content>
       
       
       
@@ -258,7 +419,34 @@
     
     
     <entry>
-      <title>1</title>
+      <title>Hello Hexo</title>
+      <link href="2020/11/26/hello-world/"/>
+      <url>2020/11/26/hello-world/</url>
+      
+        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>996是福报?</title>
       <link href="2020/11/25/1-1/"/>
       <url>2020/11/25/1-1/</url>
       
@@ -279,7 +467,7 @@
     
     
     <entry>
-      <title>2</title>
+      <title>两件小事</title>
       <link href="2020/11/25/2/"/>
       <url>2020/11/25/2/</url>
       
