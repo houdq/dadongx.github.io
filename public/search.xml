@@ -4,9 +4,22 @@
   
     
     <entry>
+      <title></title>
+      <link href="2023/02/16/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
+      <url>2023/02/16/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>我的规划</p><h1 id="我的规划"><a href="#我的规划" class="headerlink" title="我的规划"></a>我的规划</h1><h2 id="总揽图"><a href="#总揽图" class="headerlink" title="总揽图"></a>总揽图</h2><h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello Hexo</title>
-      <link href="2023/02/15/hello-world/"/>
-      <url>2023/02/15/hello-world/</url>
+      <link href="2023/02/16/hello-world/"/>
+      <url>2023/02/16/hello-world/</url>
       
         <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
       
@@ -31,13 +44,38 @@
     
     
     <entry>
-      <title></title>
-      <link href="2023/01/06/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
-      <url>2023/01/06/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
+      <title>java 中的锁解决什么问题?</title>
+      <link href="2023/02/15/java-%E4%B8%AD%E7%9A%84%E9%94%81%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/"/>
+      <url>2023/02/15/java-%E4%B8%AD%E7%9A%84%E9%94%81%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/</url>
       
-        <content type="html"><![CDATA[<p>我的规划</p><h1 id="我的规划"><a href="#我的规划" class="headerlink" title="我的规划"></a>我的规划</h1><h2 id="总揽图"><a href="#总揽图" class="headerlink" title="总揽图"></a>总揽图</h2><h2 id="分析"><a href="#分析" class="headerlink" title="分析"></a>分析</h2><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
+        <content type="html"><![CDATA[<p>Java中的锁是一种同步机制，可以确保多个线程之间共享资源的互斥访问，从而避免出现数据竞争和线程安全问题。使用锁的主要目的是保证代码的正确性和可靠性。</p><p>Java中的锁能够解决以下实际问题：</p><p>数据竞争：在多线程环境中，如果多个线程同时访问共享数据，就会产生数据竞争问题。使用锁可以确保同一时间只有一个线程可以访问共享资源，避免数据竞争和数据不一致的问题。<br>线程安全：Java中的锁可以确保线程安全，避免多个线程之间的干扰和竞争，从而保证代码的正确性和可靠性。<br>性能优化：Java中的锁可以用于优化程序的性能，比如使用读写锁来实现对数据的读写分离，从而提高程序的并发性能。<br>死锁问题：Java中的锁可以用于避免死锁问题，比如使用一致性的加锁顺序，避免出现循环依赖的情况。<br>总之，Java中的锁机制是保证多线程并发安全的重要手段，可以用于解决数据竞争、线程安全、性能优化和死锁问题等实际问题。</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> java 锁 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java怎找工作</title>
+      <link href="2023/02/15/java%E6%80%8E%E6%89%BE%E5%B7%A5%E4%BD%9C/"/>
+      <url>2023/02/15/java%E6%80%8E%E6%89%BE%E5%B7%A5%E4%BD%9C/</url>
+      
+        <content type="html"><![CDATA[<p>java 程序员怎么做找工作</p><p>在网络招聘网站上搜索职位。在中国，像智联招聘、前程无忧、猎聘网等招聘网站上，有许多公司在招聘JAVA程序员。通过这些网站可以快速找到自己合适的工作。</p><p>关注社交媒体和专业网站。<br>加入一些面向JAVA程序员的社交媒体和专业网站，如 CSDN、51CTO 等，并关注相关领域的微信公众号或QQ群。这些渠道可能会发布一些招聘信息，并且也能让您了解最新技术动态。</p><p>参加招聘会和技术交流会。<br>许多城市都会举办招聘会和技术交流会，这是一个很好的了解行业动态、与公司和招聘人员交流的机会。</p><p>向自己熟悉的人求助。<br>如果您有一些熟悉的朋友或前同事在相关公司工作，可以向他们求助，了解招聘情况和有关的信息。这也可能是找到合适工作的快捷方式。</p><p>通过自己的作品证明能力。<br>如果您已经有一些独立完成的项目或者参与的开源项目，可以在GitHub等平台上分享您的作品，向雇主展示自己的实际能力。</p><p>提高自身的技能和水平。保持不断学习和提升自身的技术能力和素养，可以增加自己在市场上的竞争力，并提高找到合适工作的机会。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> java </tag>
+            
+        </tags>
       
     </entry>
     
@@ -48,7 +86,7 @@
       <link href="2023/01/06/test/"/>
       <url>2023/01/06/test/</url>
       
-        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta prompt_">$ </span><span class="language-bash">npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
       
       
       <categories>
