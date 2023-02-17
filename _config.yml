@@ -109,7 +109,7 @@ ignore:
 # theme: landscape
 
 # theme: material crisp next chic
-theme: material
+theme: chic
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
