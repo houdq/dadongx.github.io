@@ -1,5 +1,5 @@
 ---
-title: xxb
+title: xxb-奥密克戎
 date: 2023-01-06 15:47:17
 tags: 疫情 xbb 人间清醒
 ---
