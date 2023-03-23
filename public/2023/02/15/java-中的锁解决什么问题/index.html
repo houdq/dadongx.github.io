@@ -3,53 +3,69 @@
 
 <head>
     <meta charset="UTF-8">
-<meta name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <meta name="author" content="Daniel">
-
-
-    <meta name="subtitle" content="Less is more !">
-
-
-    <meta name="description" content="This is a amazing page !">
-
-
-    <meta name="keywords" content="dadong daniel  java Web">
-
-
-<title>java 中的锁解决什么问题? | Daniel Hou</title>
-
-
-
-    <link rel="icon" href="/favicon.ico">
-
-
-
-
-    <!-- stylesheets list from _config.yml -->
-    
-    <link rel="stylesheet" href="/css/style.css">
-    
-
-
-
-    <!-- scripts list from _config.yml -->
-    
-    <script src="/js/script.js"></script>
-    
-    <script src="/js/tocbot.min.js"></script>
-    
-
-
-
-    
     
         
-    
+            <meta name="subtitle" content="Less is more !">
+            
+                
+                    <meta name="description" content="This is a amazing page !">
+                    
+                        
+                            <meta name="keywords" content="dadong daniel  java Web">
+                            
+                                
+                                    <title>
+                                        
+                                            java 中的锁解决什么问题? |
+                                                
+                                                    Daniel Hou
+                                    </title>
 
+                                    
+                                        
+                                            <link rel="icon" href="/favicon.ico">
+                                            
 
+                                                
+                                                    
+                                                        <!-- stylesheets list from _config.yml -->
+                                                        
+                                                            <link rel="stylesheet" href="/css/style.css">
+                                                            
+                                                                
+                                                                    
+                                                                        
+                                                                            <!-- scripts list from _config.yml -->
+                                                                            
+                                                                                <script src="/js/script.js"></script>
+                                                                                
+                                                                                <script src="/js/tocbot.min.js"></script>
+                                                                                
+                                                                                    
+                                                                                        
+                                                                                            
+                                                                                                
+                                                                                                    
+                                                                                                                
+                                                                                                                            
+                                                                                                                                
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9133307610871547" crossorigin="anonymous"></script>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P7FFGKWT3"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag('js', new Date());
+
+            gtag('config', 'G-9P7FFGKWT3');
+        </script>
 <meta name="generator" content="Hexo 5.2.0"></head>
 
 <body>
@@ -78,11 +94,9 @@
             <div class="navbar-header header-logo"><a href="/">Daniel Hou</a></div>
             <div class="menu navbar-right">
                 
-                    <a class="menu-item" href="/archives">Posts</a>
+                    <a class="menu-item" href="/categories/study">学习</a>
                 
-                    <a class="menu-item" href="/categories">Categories</a>
-                
-                    <a class="menu-item" href="/tags">Tags</a>
+                    <a class="menu-item" href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -103,11 +117,9 @@
             </div>
             <div class="menu" id="mobile-menu">
                 
-                    <a class="menu-item" href="/archives">Posts</a>
+                    <a class="menu-item" href="/categories/study">学习</a>
                 
-                    <a class="menu-item" href="/categories">Categories</a>
-                
-                    <a class="menu-item" href="/tags">Tags</a>
+                    <a class="menu-item" href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
                 
                     <a class="menu-item" href="/about">About</a>
                 
@@ -132,44 +144,49 @@
             <div class="main">
                 <div class="container">
     
-    
-
-    
-    <article class="post-wrap">
-        <header class="post-header">
-            <h1 class="post-title">java 中的锁解决什么问题?</h1>
-            
-                <div class="post-meta">
-                    
-                        Author: <a itemprop="author" rel="author" href="/">Daniel</a>
-                    
+        
 
                     
-                        <span class="post-time">
+                        <article class="post-wrap">
+                            <header class="post-header">
+                                <h1 class="post-title">
+                                    java 中的锁解决什么问题?
+                                </h1>
+                                
+                                    <div class="post-meta">
+                                        
+                                            Author:
+                                            <a itemprop="author" rel="author" href="/">
+                                                Daniel
+                                            </a>
+                                            
+
+                                                
+                                                    <span class="post-time">
                         Date: <a href="#">二月 15, 2023&nbsp;&nbsp;16:31:47</a>
                         </span>
-                    
-                    
-                </div>
-            
-        </header>
+                                                    
+                                                        
+                                    </div>
+                                    
+                            </header>
 
-        <div class="post-content">
-            <p>Java中的锁是一种同步机制，可以确保多个线程之间共享资源的互斥访问，从而避免出现数据竞争和线程安全问题。使用锁的主要目的是保证代码的正确性和可靠性。</p>
+                            <div class="post-content">
+                                <p>Java中的锁是一种同步机制，可以确保多个线程之间共享资源的互斥访问，从而避免出现数据竞争和线程安全问题。使用锁的主要目的是保证代码的正确性和可靠性。</p>
 <p>Java中的锁能够解决以下实际问题：</p>
 <p>数据竞争：在多线程环境中，如果多个线程同时访问共享数据，就会产生数据竞争问题。使用锁可以确保同一时间只有一个线程可以访问共享资源，避免数据竞争和数据不一致的问题。<br>线程安全：Java中的锁可以确保线程安全，避免多个线程之间的干扰和竞争，从而保证代码的正确性和可靠性。<br>性能优化：Java中的锁可以用于优化程序的性能，比如使用读写锁来实现对数据的读写分离，从而提高程序的并发性能。<br>死锁问题：Java中的锁可以用于避免死锁问题，比如使用一致性的加锁顺序，避免出现循环依赖的情况。<br>总之，Java中的锁机制是保证多线程并发安全的重要手段，可以用于解决数据竞争、线程安全、性能优化和死锁问题等实际问题。</p>
 
-        </div>
+                            </div>
 
-        
-            <section class="post-copyright">
-                
-                    <p class="copyright-item">
-                        <span>Author:</span>
-                        <span>Daniel</span>
-                    </p>
-                
-                
+                            <!-- 
+                                <section class="post-copyright">
+                                    
+                                        <p class="copyright-item">
+                                            <span>Author:</span>
+                                            <span>Daniel</span>
+                                        </p>
+                                         -->
+                            <!-- 
                     <p class="copyright-item">
                         <span>Permalink:</span>
                         <span><a href="http://dadongx.cn/2023/02/15/java-%E4%B8%AD%E7%9A%84%E9%94%81%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/">http://dadongx.cn/2023/02/15/java-%E4%B8%AD%E7%9A%84%E9%94%81%E8%A7%A3%E5%86%B3%E4%BB%80%E4%B9%88%E9%97%AE%E9%A2%98/</a></span>
@@ -186,40 +203,43 @@
                          <span>Slogan:</span>
                          <span>Do you believe in <strong>DESTINY</strong>?</span>
                      </p>
-                
+                 -->
 
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
+                            </section>
+                            
+                                <section class="post-tags">
+                                    <div>
+                                        <span>Tag(s):</span>
+                                        <span class="tag">
                     
                     
                         <a href="/tags/java-%E9%94%81/"># java 锁</a>
                     
                         
                 </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
-        <section class="post-nav">
-            
-                <a class="prev" rel="prev" href="/2023/02/16/0216-restart/">0216 restart</a>
-            
-            
-            <a class="next" rel="next" href="/2023/02/15/java%E6%80%8E%E6%89%BE%E5%B7%A5%E4%BD%9C/">java怎找工作</a>
-            
-        </section>
+                                    </div>
+                                    <div>
+                                        <a href="javascript:window.history.back();">back</a>
+                                        <span>· </span>
+                                        <a href="/">home</a>
+                                    </div>
+                                </section>
+                                <section class="post-nav">
+                                    
+                                        <a class="prev" rel="prev" href="/2023/02/16/0216-restart/">
+                                            0216 restart
+                                        </a>
+                                        
+                                            
+                                                <a class="next" rel="next" href="/2023/02/15/java%E6%80%8E%E6%89%BE%E5%B7%A5%E4%BD%9C/">
+                                                    java怎找工作
+                                                </a>
+                                                
+                                </section>
 
 
-    </article>
+                        </article>
 </div>
-
             </div>
             <footer id="footer" class="footer">
     <div class="copyright">
@@ -228,6 +248,13 @@
 </footer>
 
     </div>
+
+    <!-- coffe -->
+    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9133307610871547" data-ad-slot="5979973429" data-ad-format="auto" data-full-width-responsive="true"></ins>
+    <script>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+        console.log("google ads ok...")
+    </script>
 </body>
 
 </html>

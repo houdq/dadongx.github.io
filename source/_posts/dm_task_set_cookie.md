@@ -1,0 +1,20 @@
+---
+title: Can't set cookie dm_task_set_cookie failed 错误处理
+date: 2020-11-25 15:13:35
+tags: [docker,bug]
+categories: 技术
+toc: true
+
+---
+
+Can't set cookie dm_task_set_cookie failed
+
+解决：
+0.到出错误的 服务器 上
+1.docker ps 查出当前所有运行的 docker 容器，记下来id
+2.关闭docker服务
+echo 'y' | sudo dmsetup udevcomplete_all
+3.重启docker服务
+systemctl restart docker
+4.依次
+docker restart  id 

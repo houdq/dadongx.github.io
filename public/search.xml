@@ -4,6 +4,391 @@
   
     
     <entry>
+      <title>java如何创建多线程?</title>
+      <link href="2023/03/14/java-thread/"/>
+      <url>2023/03/14/java-thread/</url>
+      
+        <content type="html"><![CDATA[<h2 id="继承-Thread-重新-run"><a href="#继承-Thread-重新-run" class="headerlink" title="继承 Thread,重新 run"></a>继承 Thread,重新 run</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 继承 Thread 类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="实现-Runable-重写-run"><a href="#实现-Runable-重写-run" class="headerlink" title="实现 Runable+重写 run"></a>实现 Runable+重写 run</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 实现  Runnable 接口</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">MyRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">          System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure><h2 id="实现-Callable-接口重写-call-方法"><a href="#实现-Callable-接口重写-call-方法" class="headerlink" title="实现 Callable 接口重写 call 方法"></a>实现 Callable 接口重写 call 方法</h2><p>获取返回值</p><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实现 Callable 接口 获取返回值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyCallable</span> <span class="keyword">implements</span> <span class="title">Callable</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> Thread.currentThread().getName();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="new-Thread-lamda-表达式"><a href="#new-Thread-lamda-表达式" class="headerlink" title="new Thread+lamda 表达式"></a>new Thread+lamda 表达式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 创建 Thread 对象 lambda 表达式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">Thread thread = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 基于线程池创建线程</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">MyThreadFactory</span> <span class="keyword">implements</span> <span class="title">ThreadFactory</span> </span>&#123;</span><br><span class="line">     <span class="meta">@Override</span></span><br><span class="line">     <span class="function"><span class="keyword">public</span> Thread <span class="title">newThread</span><span class="params">(Runnable r)</span> </span>&#123;</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 多线程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>SpringBoot 集成 OpenAPI</title>
+      <link href="2023/03/07/springdoc/"/>
+      <url>2023/03/07/springdoc/</url>
+      
+        <content type="html"><![CDATA[<h2 id="1-项目介绍"><a href="#1-项目介绍" class="headerlink" title="1. 项目介绍"></a>1. 项目介绍</h2><p>本项目是一个基于SpringBoot的项目，用于演示如何使用SpringBoot集成open-api，包括swagger3和springdoc。</p><h2 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h2><ul><li>jdk版本：openjdk19</li><li>springboot版本：3.0.4.RELEASE</li><li>springdoc版本：2.0.2</li></ul><h2 id="简单步骤"><a href="#简单步骤" class="headerlink" title="简单步骤"></a>简单步骤</h2><h3 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springdoc<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springdoc-openapi-starter-webmvc-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="编写controller"><a href="#编写controller" class="headerlink" title="编写controller"></a>编写controller</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Operation(summary &#x3D; &quot;Get specific user object by it&#39;s id.&quot;)</span><br><span class="line">   @GetMapping(&quot;&#x2F;users&#x2F;&#123;id&#125;&quot;)</span><br><span class="line">   public User user(@Parameter(description &#x3D; &quot;id of the user.&quot;) @PathVariable(&quot;id&quot;) long id) &#123;</span><br><span class="line"></span><br><span class="line">       User user &#x3D; new User();</span><br><span class="line">       user.setName(&quot;xxx&quot;);</span><br><span class="line">       return user;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure><p>使用 openapi 的好处就是不需要额外的额皮质,使用swagger3的时候会增加 config 这里不需要.</p><h3 id="访问地址"><a href="#访问地址" class="headerlink" title="访问地址:"></a>访问地址:</h3><p>默认地址</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># swagger-ui custom path</span><br><span class="line">springdoc.swagger-ui.path&#x3D;&#x2F;swagger-ui.html</span><br><span class="line"></span><br></pre></td></tr></table></figure><p>直接访问<br><code>http://localhost:8080/swagger-ui/index.html </code>效果如下:</p><p><img src="https://user-images.githubusercontent.com/9412449/223302078-7e443ea2-8bc0-49bb-ad23-a12046e3a290.png" alt="image"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> openapi </tag>
+            
+            <tag> swagger3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一文搞定 数据库索引</title>
+      <link href="2023/02/28/index/"/>
+      <url>2023/02/28/index/</url>
+      
+        <content type="html"><![CDATA[<h2 id="什么是索引"><a href="#什么是索引" class="headerlink" title="什么是索引"></a>什么是索引</h2><p>数据库索引是一种数据结构，用于加快对数据库表中数据的检索速度。它可以把数据库表中的一列或多列数据作为索引键，并在索引键上建立一个索引树，以加快对数据的检索速度。</p><h3 id="索引越多越好吗"><a href="#索引越多越好吗" class="headerlink" title="索引越多越好吗?"></a>索引越多越好吗?</h3><p>可以对一张表创建多个索引。索引的优点是提高了查询效率，缺点是在插入、更新和删除记录时，需要同时修改索引，因此，索引越多，插入、更新和删除记录的速度就越慢。</p><h2 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h2><h3 id="按用途分"><a href="#按用途分" class="headerlink" title="按用途分"></a>按用途分</h3><ol><li><p>普通索引（Normal Index）：普通索引是最常用的索引类型，它是按照索引列的值来建立索引的，它可以加快查询的速度，提高查询效率。</p></li><li><p>唯一索引（Unique Index）：唯一索引也是按照索引列的值来建立索引的，但是它的特点是索引列的值必须是唯一的，也就是说，在一个表中，索引列的值不能重复。</p></li><li><p>主键索引（Primary Key Index）：主键索引也是按照索引列的值来建立索引的，但是它的特点是索引列的值必须是唯一的，而且不能为空。</p></li><li><p>组合索引（Composite Index）：组合索引是指在一个表中，使用多个字段来建立索引，这样可以提高查询的效率。</p></li><li><p>全文索引（Full Text Index）：全文索引是指在一个表中，使用全文检索的方式来建立索引，这样可以提高查询的效率。</p></li></ol><p>底层原理：MySQL 索引的底层原理是使用 B-Tree（B 树）来存储索引，B-Tree 是一种特殊的树结构，它可以提供快速的查找、插入和删除操作，从而提高查询的效率。</p><h3 id="按数据结构分"><a href="#按数据结构分" class="headerlink" title="按数据结构分"></a>按数据结构分</h3><p>索引分类从数据结构上分为：</p><ol><li><p>线性索引：按照顺序存储数据，比如数组、链表等；</p></li><li><p>树形索引：按照树形结构存储数据，比如二叉树、B树等；</p></li><li><p>哈希索引：按照哈希函数存储数据，比如哈希表等；</p></li><li><p>全文索引：按照文本的全文检索原理存储数据，比如倒排索引等。</p><h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><h2 id="索引规则"><a href="#索引规则" class="headerlink" title="索引规则"></a>索引规则</h2></li></ol><h2 id="索引失效"><a href="#索引失效" class="headerlink" title="索引失效"></a>索引失效</h2><h3 id="索引失效原因"><a href="#索引失效原因" class="headerlink" title="索引失效原因"></a>索引失效原因</h3><ol><li><p><strong>索引被删除</strong>：当索引被删除时，索引就会失效。</p></li><li><p>索引被修改：当索引被修改时，索引也会失效。</p></li><li><p>数据发生变化：当数据发生变化时，索引也会失效。</p></li><li><p>索引字段被<strong>修改</strong>：当索引字段被修改时，索引也会失效。</p></li><li><p>索引被<strong>禁用</strong>：当索引被禁用时，索引也会失效。</p></li></ol><h3 id="避免索引失效"><a href="#避免索引失效" class="headerlink" title="避免索引失效"></a>避免索引失效</h3><ol><li><p>尽量减少索引的<strong>更新操作</strong>，因为更新操作会导致索引失效。</p></li><li><p><strong>尽量使用唯一索引</strong>，因为唯一索引可以避免重复记录，从而避免索引失效。</p></li><li><p>尽量使用<strong>复合索引</strong>，复合索引可以提高查询效率，也可以避免索引失效。</p></li><li><p>尽量使用<strong>覆盖索引</strong>，覆盖索引可以减少查询操作，从而避免索引失效。</p></li><li><p>尽量使用稳定的索引，稳定的索引可以<strong>避免数据变动</strong>，从而避免索引失效。</p></li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据库 </tag>
+            
+            <tag> 索引 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>postgresql 和mysql 对比</title>
+      <link href="2023/02/28/psotgresvsmysql/"/>
+      <url>2023/02/28/psotgresvsmysql/</url>
+      
+        <content type="html"><![CDATA[<p>postgresql 和mysql 对比</p><table><thead><tr><th align="left"></th><th align="left">PostgreSQL</th><th align="left">MySQL</th></tr></thead><tbody><tr><td align="left">数据类型</td><td align="left">支持复杂的数据类型，如数组，多维数组，对象，XML</td><td align="left">支持常见的数据类型，如数字，字符串，日期等</td></tr><tr><td align="left">事务支持</td><td align="left">支持ACID事务</td><td align="left">支持ACID事务</td></tr><tr><td align="left">存储过程</td><td align="left">支持存储过程</td><td align="left">支持存储过程</td></tr><tr><td align="left">视图</td><td align="left">支持视图</td><td align="left">支持视图</td></tr><tr><td align="left">触发器</td><td align="left">支持触发器</td><td align="left">支持触发器</td></tr><tr><td align="left">索引</td><td align="left">支持多种索引，如B树，哈希，GIST，GiST</td><td align="left">支持B树索引</td></tr><tr><td align="left">性能</td><td align="left">高性能</td><td align="left">中等性能</td></tr><tr><td align="left">安全性</td><td align="left">支持完整的安全性功能，如访问控制，加密，身份验证等</td><td align="left">支持完整的安全性功能，如访问控制，加密，身份验证等</td></tr><tr><td align="left">可移植性</td><td align="left">支持多种操作系统，如Linux，Windows，Mac OS等</td><td align="left">支持多种操作系统，如Linux，Windows，Mac OS等</td></tr><tr><td align="left">开源</td><td align="left">开源</td><td align="left">非开源</td></tr></tbody></table>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 数据库 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一些实用的 tips</title>
+      <link href="2023/02/28/tips/"/>
+      <url>2023/02/28/tips/</url>
+      
+        <content type="html"><![CDATA[<p> 记录一些比较实用的 tips.</p><h2 id="Alfred"><a href="#Alfred" class="headerlink" title="Alfred"></a>Alfred</h2><p> mac 一定要用这个,好的工具都这里了.</p><h2 id="chatgpt"><a href="#chatgpt" class="headerlink" title="chatgpt"></a>chatgpt</h2><p> 一些能那里直接用的答案.</p><h2 id="podcast"><a href="#podcast" class="headerlink" title="podcast"></a>podcast</h2><p> 一些播客很有必要听一下.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> tips </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> tips </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>java 自旋锁 SpinLock</title>
+      <link href="2023/02/25/spinlock/"/>
+      <url>2023/02/25/spinlock/</url>
+      
+        <content type="html"><![CDATA[<h2 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h2><p>线程等待加锁时，<strong>不会阻塞</strong>，<strong>不会进入等待状态</strong>，<strong>而是保持运行状态</strong>。大致的思路是：让当前线程不停地的在循环体内执行，当循环的条件被其他线程改变时才能进入临界区。</p><h2 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h2><ul><li><p>避免死锁<br>自旋锁不会让线程阻塞或等待，也就不需要唤醒，所以可以避免产生死锁；</p></li><li><p>提高性能<br>减少上下文切换次数,提高效率.</p><h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2></li><li><p>在等待锁时进入循环会占用CPU，若等待的线程很多，对CPU的消耗会比较大；</p></li><li><p>不适合需要长时间等待的任务或线程；</p></li><li><p>不适合大量线程等待的场景。</p></li></ul><h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><ul><li>等待时间比较短的任务中；</li><li>线程数量不太多的应用中；</li><li>当等待时间长或线程数量很大时，可以使用其他锁（比如：可重入锁）。</li></ul><h2 id="java-实现"><a href="#java-实现" class="headerlink" title="java 实现"></a>java 实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class SpinkLock &#123;</span><br><span class="line">    </span><br><span class="line">    &#x2F;&#x2F; 是否占用的标志</span><br><span class="line">    private AtomicBoolean occupied &#x3D; new AtomicBoolean(false);</span><br><span class="line"></span><br><span class="line">    public void lock() &#123;</span><br><span class="line">        &#x2F;&#x2F; 使用自旋锁</span><br><span class="line">        while (occupied.getAndSet(true)) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void unlock() &#123;</span><br><span class="line">        occupied.set(false);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 多线程 </tag>
+            
+            <tag> 并发编程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Redis 相比 Memcached 有哪些优势？</title>
+      <link href="2023/02/24/cachecompare/"/>
+      <url>2023/02/24/cachecompare/</url>
+      
+        <content type="html"><![CDATA[<p>Redis 和 Memcached 都是内存中的键值存储系统，它们都可以用于缓存、会话存储等场景，但是 Redis 相对于 Memcached 有以下几个优势：</p><ol><li><p>数据结构更丰富：Redis 支持更多的数据结构，如字符串、哈希表、列表、集合、有序集合等，这些数据结构可以方便地解决各种复杂的问题，如计数器、排行榜、社交网络、消息队列等。</p></li><li><p>更高的可靠性：Redis 支持数据持久化，可以将数据写入磁盘，即使服务器重启，数据也不会丢失。同时 Redis 支持主从复制和 Sentinel 高可用方案，可以保证服务的可靠性。</p></li><li><p>更好的性能表现：Redis 采用单线程的方式来处理请求，避免了多线程之间的锁竞争和上下文切换的开销，同时采用了多种优化技术，如内存池、事件驱动等，使得 Redis 在吞吐量和响应时间方面表现更好。</p></li></ol><p>更灵活的分布式方案：Redis 提供了分片和集群两种分布式方案，分片可以水平扩展，支持更大的数据量，集群则可以自动化地完成数据分片、数据迁移和故障转移等任务，使得 Redis 更容易应对高并发和海量数据的场景。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 缓存 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>学习是在学什么</title>
+      <link href="2023/02/24/studywhat/"/>
+      <url>2023/02/24/studywhat/</url>
+      
+        <content type="html"><![CDATA[<p>我们不只是在求学过程中学习,从我们来到世上之后,从家庭,学校,社会上一直在主动或者被动接受各种知识,那么我们是为什么学习呢?</p><h2 id="知识改变命运"><a href="#知识改变命运" class="headerlink" title="知识改变命运"></a>知识改变命运</h2><p>有人说我就是为了考大学,考了大学为了找好工作,工作学习是为了涨工资,等等等等,其实都对那么本质是为啥呢?都说高考是唯一一次公平的竞争,底层人民的孩子改变命运的唯一一次翻牌的机会了.  改变命运之后呢?</p><h2 id="为了看清世界"><a href="#为了看清世界" class="headerlink" title="为了看清世界"></a>为了看清世界</h2><p>我们不只是在求学过程中学习,在我们来到世上之后,从家庭学校社会上一直再主动或者被动接受各种知识,有客观的自然规律,有人问的艺术细胞,还有人类智慧结晶.<br>最终都将是我们成为更好的自己.</p><p>学习能让我们看清世界,认识世界,了解世界.<br>学习能让我们认识自我,看清自我.<br>学习是在学什么?</p><h2 id="为了解决问题"><a href="#为了解决问题" class="headerlink" title="为了解决问题"></a>为了解决问题</h2><p>其实, 人生就像是操作系统一直在运作,唯独不同的是一旦关机后,会不会有上帝给你重启那就是另外一件事了.<br>起码我们假死的时候,自己可以杀掉进程,重新打开软件.<br>所以学习的最终目的就是解决问题,也就是产品上 解决bug.<br>人生来就是要俩解决各种问题的,并不是达到某种结果,结果都会死的.<br>过程最重要,一路上解决各种问题的过程,才是最珍贵的.</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>一文搞懂 synchronized</title>
+      <link href="2023/02/23/3/"/>
+      <url>2023/02/23/3/</url>
+      
+        <content type="html"><![CDATA[]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 锁 </tag>
+            
+            <tag> 多线程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>为什么禁用&quot;select * &quot;</title>
+      <link href="2023/02/22/whynotstaet/"/>
+      <url>2023/02/22/whynotstaet/</url>
+      
+        <content type="html"><![CDATA[<p>SELECT * 是一种 SQL 查询语句，表示从指定的表中选择所有列。虽然 SELECT * 可以返回表中的所有数据，但这种查询方法可能会导致一些问题：</p><p>不必要的网络流量：如果一张表有很多列，而且你只需要其中的一部分，使用 SELECT * 会将所有列的数据都传输到客户端，增加了不必要的网络流量。</p><p>减缓查询速度：如果查询的表中有很多列，而且你只需要其中的一部分，使用 SELECT * 可能会减缓查询的速度，因为数据库需要检索和传输多余的数据。</p><p>查询结果不可预测：如果表的结构发生了变化，例如增加或删除了一些列，使用 SELECT * 会返回新的结构，导致你的代码需要重新调整来适应这些变化。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> mysql </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>创建1000w测试数据</title>
+      <link href="2023/02/21/testdatas/"/>
+      <url>2023/02/21/testdatas/</url>
+      
+        <content type="html"><![CDATA[<p>假如需要创建1000w 测试数据的话,可以尝试使用存储过程.</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">CREATE TABLE &#96;data&#96; </span><br><span class="line">(</span><br><span class="line">  &#96;id&#96;         bigint(20) NOT NULL      AUTO_INCREMENT,</span><br><span class="line">  &#96;datetime&#96;   timestamp  NULL          DEFAULT CURRENT_TIMESTAMP,</span><br><span class="line">  &#96;channel&#96;    int(11)                  DEFAULT NULL,</span><br><span class="line">  &#96;value&#96;      float                    DEFAULT NULL,</span><br><span class="line"></span><br><span class="line">  PRIMARY KEY (&#96;id&#96;)</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">CREATE PROCEDURE generate_data(IN n int)</span><br><span class="line">BEGIN</span><br><span class="line">  DECLARE i INT DEFAULT 0;</span><br><span class="line">  WHILE i &lt; n DO</span><br><span class="line">    INSERT INTO &#96;data&#96; (&#96;datetime&#96;,&#96;value&#96;,&#96;channel&#96;) VALUES (</span><br><span class="line">      FROM_UNIXTIME(UNIX_TIMESTAMP(&#39;2014-01-01 01:00:00&#39;)+FLOOR(RAND()*31536000)),</span><br><span class="line">      ROUND(RAND()*100,2),</span><br><span class="line">      1</span><br><span class="line">    );</span><br><span class="line">    SET i &#x3D; i + 1;</span><br><span class="line">  END WHILE;</span><br><span class="line"></span><br><span class="line">  CALL generate_data(10000);</span><br><span class="line"> </span><br></pre></td></tr></table></figure><p>删除存储过程执行如下:</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">DROP PROCEDURE generate_data;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>缓存的本质和缓存实践</title>
+      <link href="2023/02/20/cache/"/>
+      <url>2023/02/20/cache/</url>
+      
+        <content type="html"><![CDATA[<h2 id="为什么要用缓存"><a href="#为什么要用缓存" class="headerlink" title="为什么要用缓存?"></a>为什么要用缓存?</h2><h3 id="缓存的本质"><a href="#缓存的本质" class="headerlink" title="缓存的本质"></a>缓存的本质</h3><blockquote><p>通俗理解计算机缓存,可以比喻成水库.</p></blockquote><h3 id="CPU缓存和系统机构缓存"><a href="#CPU缓存和系统机构缓存" class="headerlink" title="CPU缓存和系统机构缓存"></a>CPU缓存和系统机构缓存</h3><h2 id="缓存编程实现"><a href="#缓存编程实现" class="headerlink" title="缓存编程实现"></a>缓存编程实现</h2><h3 id="编程法"><a href="#编程法" class="headerlink" title="编程法"></a>编程法</h3><p>采用各种reis 客户端和 API.比如Jredis api</p><h3 id="Spring-注入"><a href="#Spring-注入" class="headerlink" title="Spring 注入"></a>Spring 注入</h3><p>Spring Data Redis 是 Spring Data 家族的一个项目，它为 Spring 应用程序提供了与 Redis 数据存储交互的支持。Spring Data Redis 通过 RedisTemplate 和 RedisConnectionFactory 为 Redis 提供了高级的 Redis 操作接口。</p><ul><li><p>添加依赖</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">    &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line">    &lt;artifactId&gt;spring-boot-starter-data-redis&lt;&#x2F;artifactId&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>RedisTemplate源码</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">@Autowired</span><br><span class="line">private RedisTemplate&lt;String, Object&gt; redisTemplate;</span><br><span class="line"></span><br><span class="line">public void setValue(String key, Object value) &#123;</span><br><span class="line">    redisTemplate.opsForValue().set(key, value);</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">public Object getValue(String key) &#123;</span><br><span class="line">    return redisTemplate.opsForValue().get(key);</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure></li><li><p>注入RedisTemplate</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">import org.springframework.beans.factory.annotation.Autowired;</span><br><span class="line">import org.springframework.data.redis.core.RedisTemplate;</span><br><span class="line">import org.springframework.stereotype.Component;</span><br><span class="line"></span><br><span class="line">@Component</span><br><span class="line">public class RedisService &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private RedisTemplate&lt;String, String&gt; redisTemplate;</span><br><span class="line"></span><br><span class="line">    public void setValue(String key, String value) &#123;</span><br><span class="line">        redisTemplate.opsForValue().set(key, value);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public String getValue(String key) &#123;</span><br><span class="line">        return redisTemplate.opsForValue().get(key);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li></ul><h3 id="注解法"><a href="#注解法" class="headerlink" title="注解法"></a>注解法</h3><p>如果你用 springboot,使用 @Cacheable 注解来实现 Redis 缓存非常简单，您只需要按照以下步骤即可：</p><ol><li><p>添加依赖：首先，在 pom.xml 文件中添加 spring-boot-starter-cache 和 spring-boot-starter-data-redis 依赖。</p></li><li><p>配置 Redis：在 application.properties 或 application.yml 文件中配置 Redis 连接信息。</p></li><li><p>创建缓存配置：在您的应用程序中创建一个缓存配置类，并使用 @Configuration 和 @EnableCaching 注解进行标注。在这个类中，您可以使用 CacheManagerBuilder.build() 方法来创建一个 RedisCacheManager 对象。</p></li><li><p>使用 @Cacheable：在需要缓存的方法上使用 @Cacheable 注解，指定缓存名称以及需要缓存的数据 key。<br>下面是一个使用 @Cacheable 注解来实现 Redis 缓存的示例：</p></li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">@Service</span><br><span class="line">public class UserService &#123;</span><br><span class="line"></span><br><span class="line">    @Autowired</span><br><span class="line">    private UserRepository userRepository;</span><br><span class="line"></span><br><span class="line">    @Cacheable(value &#x3D; &quot;user&quot;, key &#x3D; &quot;#id&quot;)</span><br><span class="line">    public User getUserById(Long id) &#123;</span><br><span class="line">        return userRepository.findById(id).orElse(null);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    &#x2F;&#x2F; 其他业务方法...</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><h2 id="访问缓存的模式"><a href="#访问缓存的模式" class="headerlink" title="访问缓存的模式"></a>访问缓存的模式</h2><h3 id="双读双写"><a href="#双读双写" class="headerlink" title="双读双写"></a>双读双写</h3><p>一般采用这种写法<br><img src="https://user-images.githubusercontent.com/9412449/220018370-696f2a8d-440e-4a83-8d97-c7d058a5b362.png" alt="image"></p><h2 id="异步更新"><a href="#异步更新" class="headerlink" title="异步更新"></a>异步更新</h2><p><img src="https://user-images.githubusercontent.com/9412449/220019055-6353b1e1-80b4-473a-83d5-56df60182373.png" alt="image"></p><h2 id="串联模式"><a href="#串联模式" class="headerlink" title="串联模式"></a>串联模式</h2><p><img src="https://user-images.githubusercontent.com/9412449/220019109-48d675d4-fd23-44b0-887f-67e11772df34.png" alt="image"></p><!--  --><h2 id="分片模式"><a href="#分片模式" class="headerlink" title="分片模式"></a>分片模式</h2><h3 id="客户端分片"><a href="#客户端分片" class="headerlink" title="客户端分片"></a>客户端分片</h3><h3 id="代理分片"><a href="#代理分片" class="headerlink" title="代理分片"></a>代理分片</h3><h3 id="集群分片"><a href="#集群分片" class="headerlink" title="集群分片"></a>集群分片</h3><h2 id="迁移方案"><a href="#迁移方案" class="headerlink" title="迁移方案"></a>迁移方案</h2><h3 id="平滑迁移"><a href="#平滑迁移" class="headerlink" title="平滑迁移"></a>平滑迁移</h3><h3 id="一致性哈希"><a href="#一致性哈希" class="headerlink" title="一致性哈希"></a>一致性哈希</h3>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cache </tag>
+            
+            <tag> 缓存 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>如何知识变现</title>
+      <link href="2023/02/20/liquidate/"/>
+      <url>2023/02/20/liquidate/</url>
+      
+        <content type="html"><![CDATA[<!-- ## 如何知识变现 --><p>1、利用社交媒体：利用社交媒体平台，如微博、微信、抖音等，发布有价值的内容，建立自己的知识品牌，吸引更多的粉丝，从而获得收益。</p><p>2、发布视频：利用视频平台，如优酷、腾讯视频等，发布有价值的视频，从而获得收益。</p><p>3、发布电子书：利用电子书平台，如亚马逊、当当等，发布有价值的电子书，从而获得收益。</p><p>4、开设在线课程：利用在线课程平台，如慕课网、网易云课堂等，开设有价值的课程，从而获得收益。</p><p>5、发布文章：利用文章发布平台，如简书、知乎等，发布有价值的文章，从而获得收益。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 学习 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 知识变现 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>从难点中学习</title>
+      <link href="2023/02/18/studyformdiffrence/"/>
+      <url>2023/02/18/studyformdiffrence/</url>
+      
+        <content type="html"><![CDATA[<h2 id="先了解技术难点"><a href="#先了解技术难点" class="headerlink" title="先了解技术难点"></a>先了解技术难点</h2><p>先分析难点,基本会从以下开始:</p><p>有限的时间；<br>复杂的环境；<br>知识的盲区.<br>解技术难点的关键是深入了解它的背景，把它拆解成一个个具体的问题，把它拆解成一个个可以解决的小问题。</p><h2 id="寻找解决方案"><a href="#寻找解决方案" class="headerlink" title="寻找解决方案"></a>寻找解决方案</h2><p>可以通过搜索引擎、技术社区、技术文档等方式，寻找可以解决技术难点的解决方案。<br>向他人请教,这个会涉及到另一个问题 <strong>如何问问题?</strong></p><h2 id="如何问问题"><a href="#如何问问题" class="headerlink" title="如何问问题?"></a>如何问问题?</h2><ol><li><p>明确你要问的问题：先确定你要问的问题，确保你的问题清楚明确，不要模糊不清。</p></li><li><p>提出具体的问题：避免问题过于抽象，要把问题具体化，让对方能够清楚地理解你的问题。</p></li><li><p>尽量使用简短的问题：尽量使用简短的问题，避免太多的冗余信息，以免让对方感到困惑。</p></li><li><p>使用开放性问题：尽量使用开放性问题，这样可以让对方有更多的发挥空间，从而获得更多的信息。</p></li><li><p>注意问题的措辞：注意问题的措辞，避免使用过于激烈的语言，以免让对方感到压力。</p></li></ol><h2 id="实践"><a href="#实践" class="headerlink" title="实践"></a>实践</h2><p>实践是学习的最佳方式，可以通过实践来加深对技术难点的理解，并且在实践中发现新的知识点。</p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>学习过程中，可以总结解决技术难点的方法，以便以后更好地解决类似的问题。最好能把解题思路和过程记录下来,分享给大家.势必会事半功倍!</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> study </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>35岁程序员如何摆脱焦虑?</title>
+      <link href="2023/02/17/anxiety/"/>
+      <url>2023/02/17/anxiety/</url>
+      
+        <content type="html"><![CDATA[<h3 id="关注自己的发展"><a href="#关注自己的发展" class="headerlink" title="关注自己的发展"></a>关注自己的发展</h3><p>把时间花在提升专业技能和知识上，不断完善自己。</p><h3 id="调整好心态"><a href="#调整好心态" class="headerlink" title="调整好心态"></a>调整好心态</h3><p>经常反思自己，认识到自己的价值所在，把握自己的价值，掌控自己的发展方向。</p><h3 id="扩大自己的社交圈"><a href="#扩大自己的社交圈" class="headerlink" title="扩大自己的社交圈"></a>扩大自己的社交圈</h3><p>多交朋友，多参加行业聚会，扩大自己的人脉资源，让自己的人际关系多样化。</p><h3 id="找出自己的兴趣"><a href="#找出自己的兴趣" class="headerlink" title="找出自己的兴趣"></a>找出自己的兴趣</h3><p>可以尝试一些新的兴趣爱好，比如旅游、健身、画画等，可以让自己放松心情，让自己的心情变得更加愉悦。</p><h3 id="健康生活"><a href="#健康生活" class="headerlink" title="健康生活"></a>健康生活</h3><p>要注意身体健康，及时补充充足的睡眠，多吃健康的食物，多运动，保持正常的作息时间。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> study </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 焦虑 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>重启</title>
       <link href="2023/02/17/restart/"/>
       <url>2023/02/17/restart/</url>
@@ -22,6 +407,33 @@
       <url>2023/02/16/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
       
         <content type="html"><![CDATA[<p>我的规划</p><hr><p>认知升级：不断学习去升级认知，做更好的自己。<br>长期主义：做有长期收益的事情，比如写作与投资。<br>积极分享：分享个人经验积极影响他人。</p><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的规划</title>
+      <link href="2023/02/16/target/"/>
+      <url>2023/02/16/target/</url>
+      
+        <content type="html"><![CDATA[<p>我的规划</p><hr><p>认知升级：不断学习去升级认知，做更好的自己。<br>长期主义：做有长期收益的事情，比如写作与投资。<br>积极分享：分享个人经验积极影响他人。</p>]]></content>
       
       
       <categories>
@@ -187,6 +599,31 @@
     
     
     <entry>
+      <title>hexo-generator-search</title>
+      <link href="2023/01/06/hexo-generator-search/"/>
+      <url>2023/01/06/hexo-generator-search/</url>
+      
+        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>juc-01</title>
       <link href="2023/01/06/juc/"/>
       <url>2023/01/06/juc/</url>
@@ -282,6 +719,31 @@
             <tag> 挣钱 </tag>
             
             <tag> 内容 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>用springboot写一个 demo</title>
+      <link href="2021/02/18/hello-springboot/"/>
+      <url>2021/02/18/hello-springboot/</url>
+      
+        <content type="html"><![CDATA[<h2 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h2><ol><li>创建一个 Maven 项目，并在 pom.xml 中添加以下依赖：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line"> &lt;groupId&gt;org.springframework.boot&lt;&#x2F;groupId&gt;</span><br><span class="line"> &lt;artifactId&gt;spring-boot-starter-web&lt;&#x2F;artifactId&gt;</span><br><span class="line">&lt;&#x2F;dependency&gt;</span><br></pre></td></tr></table></figure><h2 id="创建主程序"><a href="#创建主程序" class="headerlink" title="创建主程序"></a>创建主程序</h2><ol start="2"><li>创建一个 Spring Boot 应用程序类，例如 App.java，并使用 @SpringBootApplication 注解来声明它是一个 Spring Boot 应用程序：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.boot.SpringApplication;</span><br><span class="line">import org.springframework.boot.autoconfigure.SpringBootApplication;</span><br><span class="line"></span><br><span class="line">@SpringBootApplication</span><br><span class="line">public class App &#123;</span><br><span class="line">    public static void main(String[] args) &#123;</span><br><span class="line">        SpringApplication.run(App.class, args);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><h2 id="创建-controller"><a href="#创建-controller" class="headerlink" title="创建 controller"></a>创建 controller</h2></li><li>创建一个 Controller 类，例如 HelloController.java，并使用 @RestController 和 @RequestMapping 注解来声明一个 RESTful 接口：</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RestController;</span><br><span class="line"></span><br><span class="line">@RestController</span><br><span class="line">public class HelloController &#123;</span><br><span class="line">    @RequestMapping(&quot;&#x2F;hello&quot;)</span><br><span class="line">    public String hello() &#123;</span><br><span class="line">        return &quot;Hello World!&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure><ol start="4"><li>运行应用程序，访问 <a href="http://localhost:8080/hello%EF%BC%8C%E4%BD%A0%E5%BA%94%E8%AF%A5%E8%83%BD%E7%9C%8B%E5%88%B0%E6%B5%8F%E8%A7%88%E5%99%A8%E6%98%BE%E7%A4%BA">http://localhost:8080/hello，你应该能看到浏览器显示</a> “Hello World!”。</li></ol><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import org.springframework.web.bind.annotation.RequestMapping;</span><br><span class="line">import org.springframework.web.bind.annotation.RestController;</span><br><span class="line">@RestController</span><br><span class="line">public class HelloController &#123;</span><br><span class="line">    @RequestMapping(&quot;&#x2F;hello&quot;)</span><br><span class="line">    public String hello() &#123;</span><br><span class="line">        return &quot;Hello World!&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> springboot </tag>
             
         </tags>
       
@@ -464,12 +926,62 @@
     
     
     <entry>
+      <title>两件小事</title>
+      <link href="2020/11/25/towthings/"/>
+      <url>2020/11/25/towthings/</url>
+      
+        <content type="html"><![CDATA[<p>本文围绕两件事</p><blockquote><p>被偏爱的总是有恃无恐</p></blockquote><p>第一件是我拿可爱的女儿。宝宝开始喃喃自语，好像是在叫爸爸了，看着她一点点开始变大，心里很高兴，也很害怕，她慢一些长大吧。 于司令晚上也跟我投诉，“你家嘟嘟越来约不乖了”。我问咋了？她一脸委屈的跟我诉苦，”你家嘟嘟咬我咪咪可疼了，昨晚给我咬哭了“。哈哈哈。我说下次你揍她，就说我让的。</p><blockquote><p>窗外不只风景，还有你和未来的视界</p></blockquote><p>第二件事，跟于司令一起张罗搬家买点必须零碎，昨晚闹还闹得不欢而散，今晚一起出谋划策，畅所欲言，虽然不是给自己的房子置办，起码也是一起的小窝吧，于司令一直期望一个温馨的小家，此时北漂的我们来说，虽然有些苦难，但是只要我们在一起努力，终究会实现。感谢于司令的包容和鼓励。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 100 </tag>
+            
+            <tag> Grow up </tag>
+            
+            <tag> 生活 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Can&#39;t set cookie dm_task_set_cookie failed 错误处理</title>
       <link href="2020/11/25/1/"/>
       <url>2020/11/25/1/</url>
       
         <content type="html"><![CDATA[<p>Can’t set cookie dm_task_set_cookie failed</p><p>解决：<br>0.到出错误的 服务器 上<br>1.docker ps 查出当前所有运行的 docker 容器，记下来id<br>2.关闭docker服务<br>echo ‘y’ | sudo dmsetup udevcomplete_all<br>3.重启docker服务<br>systemctl restart docker<br>4.依次<br>docker restart  id </p>]]></content>
       
+      
+      
+        <tags>
+            
+            <tag> docker </tag>
+            
+            <tag> bug </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Can&#39;t set cookie dm_task_set_cookie failed 错误处理</title>
+      <link href="2020/11/25/dm_task_set_cookie/"/>
+      <url>2020/11/25/dm_task_set_cookie/</url>
+      
+        <content type="html"><![CDATA[<p>Can’t set cookie dm_task_set_cookie failed</p><p>解决：<br>0.到出错误的 服务器 上<br>1.docker ps 查出当前所有运行的 docker 容器，记下来id<br>2.关闭docker服务<br>echo ‘y’ | sudo dmsetup udevcomplete_all<br>3.重启docker服务<br>systemctl restart docker<br>4.依次<br>docker restart  id </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
       
       
         <tags>
