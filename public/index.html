@@ -1,220 +1,1323 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-
 <head>
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 5.2.0">
 
-    <meta name="author" content="Daniel">
-    
-        
-            <meta name="subtitle" content="Less is more !">
-            
-                
-                    <meta name="description" content="This is a amazing page !">
-                    
-                        
-                            <meta name="keywords" content="dadong daniel  java Web">
-                            
-                                
-                                    <title>
-                                        
-                                                    Daniel Hou
-                                    </title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
 
-                                    
-                                        
-                                            <link rel="icon" href="/favicon.ico">
-                                            
+<link rel="stylesheet" href="/css/main.css">
 
-                                                
-                                                    
-                                                        <!-- stylesheets list from _config.yml -->
-                                                        
-                                                            <link rel="stylesheet" href="/css/style.css">
-                                                            
-                                                                
-                                                                    
-                                                                        
-                                                                            <!-- scripts list from _config.yml -->
-                                                                            
-                                                                                <script src="/js/script.js"></script>
-                                                                                
-                                                                                <script src="/js/tocbot.min.js"></script>
-                                                                                
-                                                                                    
-                                                                                        
-                                                                                            
-                                                                                                
-                                                                                                    
-                                                                                                                
-                                                                                                                            
-                                                                                                                                
-        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9133307610871547" crossorigin="anonymous"></script>
-        <!-- Google tag (gtag.js) -->
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-9P7FFGKWT3"></script>
-        <script>
-            window.dataLayer = window.dataLayer || [];
 
-            function gtag() {
-                dataLayer.push(arguments);
-            }
-            gtag('js', new Date());
 
-            gtag('config', 'G-9P7FFGKWT3');
-        </script>
-<meta name="generator" content="Hexo 5.2.0"></head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha256-/4UQcSmErDzPCMAiuOiWPVVsNN2s3ZY/NsmXNcj0IFc=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
 
-<body>
-    <script>
-        // this function is used to check current theme before page loaded.
-        (() => {
-            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
-            const isDark = currentTheme === 'dark';
-            const pagebody = document.getElementsByTagName('body')[0]
-            if (isDark) {
-                pagebody.classList.add('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
-            } else {
-                pagebody.classList.remove('dark-theme');
-                // mobile
-                document.getElementById("mobile-toggle-theme").innerText = "· Light"
-            }
-        })();
-    </script>
+<script class="next-config" data-name="main" type="application/json">{"hostname":"dadongx.cn","root":"/","images":"/images","scheme":"Muse","darkmode":false,"version":"8.15.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":false,"style":null},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
 
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Daniel Hou</a></div>
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="/categories/study">学习</a>
-                
-                    <a class="menu-item" href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
-            </div>
-        </div>
-    </nav>
+    <meta name="description" content="This is a amazing page !">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Daniel Hou">
+<meta property="og:url" content="http://dadongx.cn/index.html">
+<meta property="og:site_name" content="Daniel Hou">
+<meta property="og:description" content="This is a amazing page !">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="Daniel">
+<meta property="article:tag" content="dadong daniel  java Web">
+<meta name="twitter:card" content="summary">
 
-    
-    <nav class="navbar-mobile" id="nav-mobile">
-        <div class="container">
-            <div class="navbar-header">
-                <div>
-                    <a href="/">Daniel Hou</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
-                </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
-            </div>
-            <div class="menu" id="mobile-menu">
-                
-                    <a class="menu-item" href="/categories/study">学习</a>
-                
-                    <a class="menu-item" href="/categories/%E6%8A%80%E6%9C%AF">技术</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-            </div>
-        </div>
-    </nav>
+
+<link rel="canonical" href="http://dadongx.cn/">
+
+
+
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":true,"isPost":false,"lang":"zh-CN","comments":"","permalink":"","path":"index.html","title":""}</script>
+
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>Daniel Hou</title>
+  
+
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <h1 class="site-title">Daniel Hou</h1>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">Less is more !</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
 
 </header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
-        var mobileMenu = document.getElementById("mobile-menu");
-        if(toggleMenu.classList.contains("active")){
-           toggleMenu.classList.remove("active")
-            mobileMenu.classList.remove("active")
-        }else{
-            toggleMenu.classList.add("active")
-            mobileMenu.classList.add("active")
-        }
-    }
-</script>
-            <div class="main">
-                
-    <div class="container profile-container">
-    <div class="intro">
-        <div class="avatar">
-            <a href="/"><img src="/image/daniel.jpeg"></a>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
         </div>
-        <div class="nickname">Daniel Hou</div>
-        <div class="description"><p>Less is more <br><em>聚焦，专注，死磕，执行</em></p>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+  <p class="site-author-name" itemprop="name">Daniel</p>
+  <div class="site-description" itemprop="description">This is a amazing page !</div>
 </div>
-        <div class="links">
-            
-                
-                    <a class="link-item" title="Blog" href="/archives">
-                        
-                        
-                            <i class="iconfont icon-blog"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="ZhiHu" target="_blank" rel="noopener" href="https://www.zhihu.com/people/HoldQPro">
-                        
-                        
-                            <i class="iconfont icon-zhihu"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Twitter" target="_blank" rel="noopener" href="https://twitter.com/thedanielhou">
-                        
-                        
-                            <i class="iconfont icon-twitter"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Instagram" href="">
-                        
-                        
-                            <i class="iconfont icon-instagram"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Reddit" href="">
-                        
-                        
-                            <i class="iconfont icon-reddit"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Github" target="_blank" rel="noopener" href="https://github.com/houdq">
-                        
-                        
-                            <i class="iconfont icon-github"></i>
-                        
-                    </a>
-                
-            
-        </div>
-    </div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">43</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+          <a href="/categories/">
+        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">39</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
 </div>
 
-
-            </div>
-            <footer id="footer" class="footer">
-    <div class="copyright">
-        <span>© Daniel | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
-    </div>
-</footer>
-
+        </div>
+      </div>
     </div>
 
-    <!-- coffe -->
-    <ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-9133307610871547" data-ad-slot="5979973429" data-ad-format="auto" data-full-width-responsive="true"></ins>
-    <script>
-        (adsbygoogle = window.adsbygoogle || []).push({});
-        console.log("google ads ok...")
-    </script>
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/03/23/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/23/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/" class="post-title-link" itemprop="url">我的规划</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-03-23 15:48:47" itemprop="dateCreated datePublished" datetime="2023-03-23T15:48:47+08:00">2023-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/work/" itemprop="url" rel="index"><span itemprop="name">工作</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>188</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>我的规划</p>
+<hr>
+<p>认知升级：不断学习去升级认知，做更好的自己。<br>长期主义：做有长期收益的事情，比如写作与投资。<br>积极分享：分享个人经验积极影响他人。</p>
+<p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/03/23/test/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/23/test/" class="post-title-link" itemprop="url">hexo-generator-search</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-03-23 15:48:47" itemprop="dateCreated datePublished" datetime="2023-03-23T15:48:47+08:00">2023-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%B7%A5%E5%85%B7/" itemprop="url" rel="index"><span itemprop="name">工具</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>406</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure>
+
+
+<p>如果需要排除搜索，只要在indexing:false 即可</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/03/23/juc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/23/juc/" class="post-title-link" itemprop="url">juc-01</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-03-23 15:48:47" itemprop="dateCreated datePublished" datetime="2023-03-23T15:48:47+08:00">2023-03-23</time>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>789</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h3 id="阶段1"><a href="#阶段1" class="headerlink" title="阶段1"></a>阶段1</h3><p>什么是JUC？<br>为什么CAS和AQS是JUC的核心？<br>ReentrantLock适用于什么场景？<br>门闩（Latch）同步器适用于什么场景？<br>篱笆（Barrier）同步器适用于什么场景？<br>信号量（Semaphore）同步器适用于什么场景？<br>阶段同步器（Phaser）适用于什么场景？<br>原生锁支持（LockSupport）适用于什么场景？<br>有哪些同步队列可以用于线程池？<br>Exchanger交换器适用于什么场景？<br>各种同步器在大厂面试中的综合运用怎么做？<br>（首次公开）通过阿里一道面试题理解大厂面试多线程代码题的要求<br>02.赢在2021年金三银四的起跑线上</p>
+<p>什么是JUC？什么是JUC？什么是JUC？什么是JUC？什么是JUC？什么是JUC？<br>为什么CAS和AQS是JUC的核心？<br>ReentrantLock适用于什么场景？<br>门闩（Latch）同步器适用于什么场景？<br>篱笆（Barrier）同步器适用于什么场景？<br>信号量（Semaphore）同步器适用于什么场景？<br>阶段同步器（Phaser）适用于什么场景？<br>原生锁支持（LockSupport）适用于什么场景？<br>有哪些同步队列可以用于线程池？<br>Exchanger交换器适用于什么场景？<br>各种同步器在大厂面试中的综合运用怎么做？<br>（首次公开）通过阿里一道面试题理解大厂面试多线程代码题的要求<br>02.赢在2021年金三银四的起跑线上</p>
+<h3 id="阶段2"><a href="#阶段2" class="headerlink" title="阶段2"></a>阶段2</h3><p>线程的本质(操作系统与CPU是如何执行线程的)<br>并发编程为什么充满挑战？<br>并发编程的三大特性：可见性、有序性、原子性<br>synchronized JMM CAS AQS lock这些高频出现的面试概念究竟是什么？<br>无锁、偏向锁、轻量级锁、重量级锁升级过程<br>悲观锁/乐观锁 共享锁/独占锁 整体锁/分段锁 可重入锁/不可重入锁<br>（首次公开）银弹已经诞生？有没有一种一定能保证线程安全的终极代码？<br>（首次公开）工作线程数，设多少最合适？如何理解N<em>C</em>(1+C/W)的计算公式?</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/03/23/idea%20always%20Update%20Indices/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/23/idea%20always%20Update%20Indices/" class="post-title-link" itemprop="url">Hello Hexo</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-03-23 15:48:47" itemprop="dateCreated datePublished" datetime="2023-03-23T15:48:47+08:00">2023-03-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/idea/" itemprop="url" rel="index"><span itemprop="name">idea</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>253</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="idea-always-Update-Indices"><a href="#idea-always-Update-Indices" class="headerlink" title="idea always Update Indices"></a>idea always Update Indices</h1><h2 id="Open-IntelliJ-IDEA"><a href="#Open-IntelliJ-IDEA" class="headerlink" title="Open IntelliJ IDEA."></a>Open IntelliJ IDEA.</h2><ol>
+<li>Select the File menu.</li>
+<li>Select the Invalidate Caches / Restart… menu. Once selected you get a pop-up with a bunch of options.</li>
+<li>Select Invalidate and Restart. and before doing that make sure you saved all your changes else it might delete some unsaved changes.</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/03/14/java-thread/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/14/java-thread/" class="post-title-link" itemprop="url">java如何创建多线程?</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-03-14 16:35:40 / 修改时间：16:45:14" itemprop="dateCreated datePublished" datetime="2023-03-14T16:35:40+08:00">2023-03-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>1.1k</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="继承-Thread-重新-run"><a href="#继承-Thread-重新-run" class="headerlink" title="继承 Thread,重新 run"></a>继承 Thread,重新 run</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 继承 Thread 类</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyThread</span> <span class="keyword">extends</span> <span class="title">Thread</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="实现-Runable-重写-run"><a href="#实现-Runable-重写-run" class="headerlink" title="实现 Runable+重写 run"></a>实现 Runable+重写 run</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">   * 实现  Runnable 接口</span></span><br><span class="line"><span class="comment">   */</span></span><br><span class="line">  <span class="class"><span class="keyword">class</span> <span class="title">MyRunnable</span> <span class="keyword">implements</span> <span class="title">Runnable</span> </span>&#123;</span><br><span class="line">      <span class="meta">@Override</span></span><br><span class="line">      <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">          System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">      &#125;</span><br><span class="line">  &#125;</span><br></pre></td></tr></table></figure>
+<h2 id="实现-Callable-接口重写-call-方法"><a href="#实现-Callable-接口重写-call-方法" class="headerlink" title="实现 Callable 接口重写 call 方法"></a>实现 Callable 接口重写 call 方法</h2><p>获取返回值</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 实现 Callable 接口 获取返回值</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">MyCallable</span> <span class="keyword">implements</span> <span class="title">Callable</span> </span>&#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> Object <span class="title">call</span><span class="params">()</span> <span class="keyword">throws</span> Exception </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">        <span class="keyword">return</span> Thread.currentThread().getName();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="new-Thread-lamda-表达式"><a href="#new-Thread-lamda-表达式" class="headerlink" title="new Thread+lamda 表达式"></a>new Thread+lamda 表达式</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * 创建 Thread 对象 lambda 表达式</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line">Thread thread = <span class="keyword">new</span> Thread(<span class="keyword">new</span> Runnable() &#123;</span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">run</span><span class="params">()</span> </span>&#123;</span><br><span class="line">        System.out.println(<span class="string">&quot;线程名&quot;</span> + Thread.currentThread().getName() + <span class="string">&quot;,开始运行&quot;</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;);</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<h2 id="线程池"><a href="#线程池" class="headerlink" title="线程池"></a>线程池</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">  * 基于线程池创建线程</span></span><br><span class="line"><span class="comment">  */</span></span><br><span class="line"> <span class="class"><span class="keyword">class</span> <span class="title">MyThreadFactory</span> <span class="keyword">implements</span> <span class="title">ThreadFactory</span> </span>&#123;</span><br><span class="line">     <span class="meta">@Override</span></span><br><span class="line">     <span class="function"><span class="keyword">public</span> Thread <span class="title">newThread</span><span class="params">(Runnable r)</span> </span>&#123;</span><br><span class="line">         <span class="keyword">return</span> <span class="keyword">null</span>;</span><br><span class="line">     &#125;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/03/07/springdoc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/03/07/springdoc/" class="post-title-link" itemprop="url">SpringBoot 集成 OpenAPI</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-03-07 10:17:38 / 修改时间：10:22:31" itemprop="dateCreated datePublished" datetime="2023-03-07T10:17:38+08:00">2023-03-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>860</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="1-项目介绍"><a href="#1-项目介绍" class="headerlink" title="1. 项目介绍"></a>1. 项目介绍</h2><p>本项目是一个基于SpringBoot的项目，用于演示如何使用SpringBoot集成open-api，包括swagger3和springdoc。</p>
+<h2 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h2><ul>
+<li>jdk版本：openjdk19</li>
+<li>springboot版本：3.0.4.RELEASE</li>
+<li>springdoc版本：2.0.2</li>
+</ul>
+<h2 id="简单步骤"><a href="#简单步骤" class="headerlink" title="简单步骤"></a>简单步骤</h2><h3 id="添加依赖"><a href="#添加依赖" class="headerlink" title="添加依赖"></a>添加依赖</h3><figure class="highlight xml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springdoc<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springdoc-openapi-starter-webmvc-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.0.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="编写controller"><a href="#编写controller" class="headerlink" title="编写controller"></a>编写controller</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">@Operation(summary &#x3D; &quot;Get specific user object by it&#39;s id.&quot;)</span><br><span class="line">   @GetMapping(&quot;&#x2F;users&#x2F;&#123;id&#125;&quot;)</span><br><span class="line">   public User user(@Parameter(description &#x3D; &quot;id of the user.&quot;) @PathVariable(&quot;id&quot;) long id) &#123;</span><br><span class="line"></span><br><span class="line">       User user &#x3D; new User();</span><br><span class="line">       user.setName(&quot;xxx&quot;);</span><br><span class="line">       return user;</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+<p>使用 openapi 的好处就是不需要额外的额皮质,使用swagger3的时候会增加 config 这里不需要.</p>
+<h3 id="访问地址"><a href="#访问地址" class="headerlink" title="访问地址:"></a>访问地址:</h3><p>默认地址</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># swagger-ui custom path</span><br><span class="line">springdoc.swagger-ui.path&#x3D;&#x2F;swagger-ui.html</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>直接访问<br><code>http://localhost:8080/swagger-ui/index.html </code>效果如下:</p>
+<p><img src="https://user-images.githubusercontent.com/9412449/223302078-7e443ea2-8bc0-49bb-ad23-a12046e3a290.png" alt="image"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/02/28/index/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/28/index/" class="post-title-link" itemprop="url">一文搞定 数据库索引</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-02-28 12:41:46 / 修改时间：14:14:04" itemprop="dateCreated datePublished" datetime="2023-02-28T12:41:46+08:00">2023-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>995</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="什么是索引"><a href="#什么是索引" class="headerlink" title="什么是索引"></a>什么是索引</h2><p>数据库索引是一种数据结构，用于加快对数据库表中数据的检索速度。它可以把数据库表中的一列或多列数据作为索引键，并在索引键上建立一个索引树，以加快对数据的检索速度。</p>
+<h3 id="索引越多越好吗"><a href="#索引越多越好吗" class="headerlink" title="索引越多越好吗?"></a>索引越多越好吗?</h3><p>可以对一张表创建多个索引。索引的优点是提高了查询效率，缺点是在插入、更新和删除记录时，需要同时修改索引，因此，索引越多，插入、更新和删除记录的速度就越慢。</p>
+<h2 id="索引分类"><a href="#索引分类" class="headerlink" title="索引分类"></a>索引分类</h2><h3 id="按用途分"><a href="#按用途分" class="headerlink" title="按用途分"></a>按用途分</h3><ol>
+<li><p>普通索引（Normal Index）：普通索引是最常用的索引类型，它是按照索引列的值来建立索引的，它可以加快查询的速度，提高查询效率。</p>
+</li>
+<li><p>唯一索引（Unique Index）：唯一索引也是按照索引列的值来建立索引的，但是它的特点是索引列的值必须是唯一的，也就是说，在一个表中，索引列的值不能重复。</p>
+</li>
+<li><p>主键索引（Primary Key Index）：主键索引也是按照索引列的值来建立索引的，但是它的特点是索引列的值必须是唯一的，而且不能为空。</p>
+</li>
+<li><p>组合索引（Composite Index）：组合索引是指在一个表中，使用多个字段来建立索引，这样可以提高查询的效率。</p>
+</li>
+<li><p>全文索引（Full Text Index）：全文索引是指在一个表中，使用全文检索的方式来建立索引，这样可以提高查询的效率。</p>
+</li>
+</ol>
+<p>底层原理：MySQL 索引的底层原理是使用 B-Tree（B 树）来存储索引，B-Tree 是一种特殊的树结构，它可以提供快速的查找、插入和删除操作，从而提高查询的效率。</p>
+<h3 id="按数据结构分"><a href="#按数据结构分" class="headerlink" title="按数据结构分"></a>按数据结构分</h3><p>索引分类从数据结构上分为：</p>
+<ol>
+<li><p>线性索引：按照顺序存储数据，比如数组、链表等；</p>
+</li>
+<li><p>树形索引：按照树形结构存储数据，比如二叉树、B树等；</p>
+</li>
+<li><p>哈希索引：按照哈希函数存储数据，比如哈希表等；</p>
+</li>
+<li><p>全文索引：按照文本的全文检索原理存储数据，比如倒排索引等。</p>
+<h2 id="作用"><a href="#作用" class="headerlink" title="作用"></a>作用</h2><h2 id="索引规则"><a href="#索引规则" class="headerlink" title="索引规则"></a>索引规则</h2></li>
+</ol>
+<h2 id="索引失效"><a href="#索引失效" class="headerlink" title="索引失效"></a>索引失效</h2><h3 id="索引失效原因"><a href="#索引失效原因" class="headerlink" title="索引失效原因"></a>索引失效原因</h3><ol>
+<li><p><strong>索引被删除</strong>：当索引被删除时，索引就会失效。</p>
+</li>
+<li><p>索引被修改：当索引被修改时，索引也会失效。</p>
+</li>
+<li><p>数据发生变化：当数据发生变化时，索引也会失效。</p>
+</li>
+<li><p>索引字段被<strong>修改</strong>：当索引字段被修改时，索引也会失效。</p>
+</li>
+<li><p>索引被<strong>禁用</strong>：当索引被禁用时，索引也会失效。</p>
+</li>
+</ol>
+<h3 id="避免索引失效"><a href="#避免索引失效" class="headerlink" title="避免索引失效"></a>避免索引失效</h3><ol>
+<li><p>尽量减少索引的<strong>更新操作</strong>，因为更新操作会导致索引失效。</p>
+</li>
+<li><p><strong>尽量使用唯一索引</strong>，因为唯一索引可以避免重复记录，从而避免索引失效。</p>
+</li>
+<li><p>尽量使用<strong>复合索引</strong>，复合索引可以提高查询效率，也可以避免索引失效。</p>
+</li>
+<li><p>尽量使用<strong>覆盖索引</strong>，覆盖索引可以减少查询操作，从而避免索引失效。</p>
+</li>
+<li><p>尽量使用稳定的索引，稳定的索引可以<strong>避免数据变动</strong>，从而避免索引失效。</p>
+</li>
+</ol>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/02/28/psotgresvsmysql/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/28/psotgresvsmysql/" class="post-title-link" itemprop="url">postgresql 和mysql 对比</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-28 11:27:43" itemprop="dateCreated datePublished" datetime="2023-02-28T11:27:43+08:00">2023-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-03-08 15:53:52" itemprop="dateModified" datetime="2023-03-08T15:53:52+08:00">2023-03-08</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>306</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>postgresql 和mysql 对比</p>
+<table>
+<thead>
+<tr>
+<th align="left"></th>
+<th align="left">PostgreSQL</th>
+<th align="left">MySQL</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="left">数据类型</td>
+<td align="left">支持复杂的数据类型，如数组，多维数组，对象，XML</td>
+<td align="left">支持常见的数据类型，如数字，字符串，日期等</td>
+</tr>
+<tr>
+<td align="left">事务支持</td>
+<td align="left">支持ACID事务</td>
+<td align="left">支持ACID事务</td>
+</tr>
+<tr>
+<td align="left">存储过程</td>
+<td align="left">支持存储过程</td>
+<td align="left">支持存储过程</td>
+</tr>
+<tr>
+<td align="left">视图</td>
+<td align="left">支持视图</td>
+<td align="left">支持视图</td>
+</tr>
+<tr>
+<td align="left">触发器</td>
+<td align="left">支持触发器</td>
+<td align="left">支持触发器</td>
+</tr>
+<tr>
+<td align="left">索引</td>
+<td align="left">支持多种索引，如B树，哈希，GIST，GiST</td>
+<td align="left">支持B树索引</td>
+</tr>
+<tr>
+<td align="left">性能</td>
+<td align="left">高性能</td>
+<td align="left">中等性能</td>
+</tr>
+<tr>
+<td align="left">安全性</td>
+<td align="left">支持完整的安全性功能，如访问控制，加密，身份验证等</td>
+<td align="left">支持完整的安全性功能，如访问控制，加密，身份验证等</td>
+</tr>
+<tr>
+<td align="left">可移植性</td>
+<td align="left">支持多种操作系统，如Linux，Windows，Mac OS等</td>
+<td align="left">支持多种操作系统，如Linux，Windows，Mac OS等</td>
+</tr>
+<tr>
+<td align="left">开源</td>
+<td align="left">开源</td>
+<td align="left">非开源</td>
+</tr>
+</tbody></table>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/02/28/tips/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/28/tips/" class="post-title-link" itemprop="url">一些实用的 tips</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2023-02-28 10:55:36 / 修改时间：10:57:53" itemprop="dateCreated datePublished" datetime="2023-02-28T10:55:36+08:00">2023-02-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/tips/" itemprop="url" rel="index"><span itemprop="name">tips</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>77</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p> 记录一些比较实用的 tips.</p>
+<h2 id="Alfred"><a href="#Alfred" class="headerlink" title="Alfred"></a>Alfred</h2><p> mac 一定要用这个,好的工具都这里了.</p>
+<h2 id="chatgpt"><a href="#chatgpt" class="headerlink" title="chatgpt"></a>chatgpt</h2><p> 一些能那里直接用的答案.</p>
+<h2 id="podcast"><a href="#podcast" class="headerlink" title="podcast"></a>podcast</h2><p> 一些播客很有必要听一下.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://dadongx.cn/2023/02/25/spinlock/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="name" content="Daniel">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Daniel Hou">
+      <meta itemprop="description" content="This is a amazing page !">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Daniel Hou">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2023/02/25/spinlock/" class="post-title-link" itemprop="url">java 自旋锁 SpinLock</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2023-02-25 12:17:26" itemprop="dateCreated datePublished" datetime="2023-02-25T12:17:26+08:00">2023-02-25</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">更新于</span>
+      <time title="修改时间：2023-02-26 17:23:16" itemprop="dateModified" datetime="2023-02-26T17:23:16+08:00">2023-02-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
+    </span>
+
+  
+    <span class="post-meta-break"></span>
+    <span class="post-meta-item" title="本文字数">
+      <span class="post-meta-item-icon">
+        <i class="far fa-file-word"></i>
+      </span>
+      <span class="post-meta-item-text">本文字数：</span>
+      <span>540</span>
+    </span>
+    <span class="post-meta-item" title="阅读时长">
+      <span class="post-meta-item-icon">
+        <i class="far fa-clock"></i>
+      </span>
+      <span class="post-meta-item-text">阅读时长 &asymp;</span>
+      <span>1 分钟</span>
+    </span>
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="含义"><a href="#含义" class="headerlink" title="含义"></a>含义</h2><p>线程等待加锁时，<strong>不会阻塞</strong>，<strong>不会进入等待状态</strong>，<strong>而是保持运行状态</strong>。大致的思路是：让当前线程不停地的在循环体内执行，当循环的条件被其他线程改变时才能进入临界区。</p>
+<h2 id="优势"><a href="#优势" class="headerlink" title="优势"></a>优势</h2><ul>
+<li><p>避免死锁<br>自旋锁不会让线程阻塞或等待，也就不需要唤醒，所以可以避免产生死锁；</p>
+</li>
+<li><p>提高性能<br>减少上下文切换次数,提高效率.</p>
+<h2 id="缺点"><a href="#缺点" class="headerlink" title="缺点"></a>缺点</h2></li>
+<li><p>在等待锁时进入循环会占用CPU，若等待的线程很多，对CPU的消耗会比较大；</p>
+</li>
+<li><p>不适合需要长时间等待的任务或线程；</p>
+</li>
+<li><p>不适合大量线程等待的场景。</p>
+</li>
+</ul>
+<h2 id="适用场景"><a href="#适用场景" class="headerlink" title="适用场景"></a>适用场景</h2><ul>
+<li>等待时间比较短的任务中；</li>
+<li>线程数量不太多的应用中；</li>
+<li>当等待时间长或线程数量很大时，可以使用其他锁（比如：可重入锁）。</li>
+</ul>
+<h2 id="java-实现"><a href="#java-实现" class="headerlink" title="java 实现"></a>java 实现</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">public class SpinkLock &#123;</span><br><span class="line">    </span><br><span class="line">    &#x2F;&#x2F; 是否占用的标志</span><br><span class="line">    private AtomicBoolean occupied &#x3D; new AtomicBoolean(false);</span><br><span class="line"></span><br><span class="line">    public void lock() &#123;</span><br><span class="line">        &#x2F;&#x2F; 使用自旋锁</span><br><span class="line">        while (occupied.getAndSet(true)) &#123;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    public void unlock() &#123;</span><br><span class="line">        occupied.set(false);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+  <nav class="pagination">
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+  </nav>
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+
+<div class="copyright">
+  &copy; 
+  <span itemprop="copyrightYear">2023</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Daniel</span>
+</div>
+<div class="wordcount">
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-line"></i>
+    </span>
+    <span title="站点总字数">23k</span>
+  </span>
+  <span class="post-meta-item">
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">21 分钟</span>
+  </span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/muse/" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/schemes/muse.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+  
+
+
+
+
+
 </body>
-
 </html>

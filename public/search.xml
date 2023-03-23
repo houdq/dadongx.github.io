@@ -4,6 +4,104 @@
   
     
     <entry>
+      <title>我的规划</title>
+      <link href="2023/03/23/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
+      <url>2023/03/23/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
+      
+        <content type="html"><![CDATA[<p>我的规划</p><hr><p>认知升级：不断学习去升级认知，做更好的自己。<br>长期主义：做有长期收益的事情，比如写作与投资。<br>积极分享：分享个人经验积极影响他人。</p><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工作 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>hexo-generator-search</title>
+      <link href="2023/03/23/test/"/>
+      <url>2023/03/23/test/</url>
+      
+        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
+      
+      
+      <categories>
+          
+          <category> 工具 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+            <tag> 性能测试 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>juc-01</title>
+      <link href="2023/03/23/juc/"/>
+      <url>2023/03/23/juc/</url>
+      
+        <content type="html"><![CDATA[<h3 id="阶段1"><a href="#阶段1" class="headerlink" title="阶段1"></a>阶段1</h3><p>什么是JUC？<br>为什么CAS和AQS是JUC的核心？<br>ReentrantLock适用于什么场景？<br>门闩（Latch）同步器适用于什么场景？<br>篱笆（Barrier）同步器适用于什么场景？<br>信号量（Semaphore）同步器适用于什么场景？<br>阶段同步器（Phaser）适用于什么场景？<br>原生锁支持（LockSupport）适用于什么场景？<br>有哪些同步队列可以用于线程池？<br>Exchanger交换器适用于什么场景？<br>各种同步器在大厂面试中的综合运用怎么做？<br>（首次公开）通过阿里一道面试题理解大厂面试多线程代码题的要求<br>02.赢在2021年金三银四的起跑线上</p><p>什么是JUC？什么是JUC？什么是JUC？什么是JUC？什么是JUC？什么是JUC？<br>为什么CAS和AQS是JUC的核心？<br>ReentrantLock适用于什么场景？<br>门闩（Latch）同步器适用于什么场景？<br>篱笆（Barrier）同步器适用于什么场景？<br>信号量（Semaphore）同步器适用于什么场景？<br>阶段同步器（Phaser）适用于什么场景？<br>原生锁支持（LockSupport）适用于什么场景？<br>有哪些同步队列可以用于线程池？<br>Exchanger交换器适用于什么场景？<br>各种同步器在大厂面试中的综合运用怎么做？<br>（首次公开）通过阿里一道面试题理解大厂面试多线程代码题的要求<br>02.赢在2021年金三银四的起跑线上</p><h3 id="阶段2"><a href="#阶段2" class="headerlink" title="阶段2"></a>阶段2</h3><p>线程的本质(操作系统与CPU是如何执行线程的)<br>并发编程为什么充满挑战？<br>并发编程的三大特性：可见性、有序性、原子性<br>synchronized JMM CAS AQS lock这些高频出现的面试概念究竟是什么？<br>无锁、偏向锁、轻量级锁、重量级锁升级过程<br>悲观锁/乐观锁 共享锁/独占锁 整体锁/分段锁 可重入锁/不可重入锁<br>（首次公开）银弹已经诞生？有没有一种一定能保证线程安全的终极代码？<br>（首次公开）工作线程数，设多少最合适？如何理解N<em>C</em>(1+C/W)的计算公式?</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> juc </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Hello Hexo</title>
+      <link href="2023/03/23/idea%20always%20Update%20Indices/"/>
+      <url>2023/03/23/idea%20always%20Update%20Indices/</url>
+      
+        <content type="html"><![CDATA[<h1 id="idea-always-Update-Indices"><a href="#idea-always-Update-Indices" class="headerlink" title="idea always Update Indices"></a>idea always Update Indices</h1><h2 id="Open-IntelliJ-IDEA"><a href="#Open-IntelliJ-IDEA" class="headerlink" title="Open IntelliJ IDEA."></a>Open IntelliJ IDEA.</h2><ol><li>Select the File menu.</li><li>Select the Invalidate Caches / Restart… menu. Once selected you get a pop-up with a bunch of options.</li><li>Select Invalidate and Restart. and before doing that make sure you saved all your changes else it might delete some unsaved changes.</li></ol>]]></content>
+      
+      
+      <categories>
+          
+          <category> idea </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> idea </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>java如何创建多线程?</title>
       <link href="2023/03/14/java-thread/"/>
       <url>2023/03/14/java-thread/</url>
@@ -403,33 +501,6 @@
     
     <entry>
       <title>我的规划</title>
-      <link href="2023/02/16/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/"/>
-      <url>2023/02/16/%E6%88%91%E7%9A%84%E5%8F%8D%E6%80%9D/</url>
-      
-        <content type="html"><![CDATA[<p>我的规划</p><hr><p>认知升级：不断学习去升级认知，做更好的自己。<br>长期主义：做有长期收益的事情，比如写作与投资。<br>积极分享：分享个人经验积极影响他人。</p><p>![image-20210625103901356](/Users/houxiaoqiang/Library/Application Support/typora-user-images/image-20210625103901356.png)</p>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工作 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> 性能测试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>我的规划</title>
       <link href="2023/02/16/target/"/>
       <url>2023/02/16/target/</url>
       
@@ -573,33 +644,6 @@
     
     <entry>
       <title>hexo-generator-search</title>
-      <link href="2023/01/06/test/"/>
-      <url>2023/01/06/test/</url>
-      
-        <content type="html"><![CDATA[<p>生成搜索 data   Hexo  3。x   4. x。这个插件    用于生成  搜索索引 文件,  包含所有的必要  data    文章 你 可以使用 写 本地搜索引擎   博客。JSON支持  XML 和   输出格式。</p><h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> npm install hexo-generator-search --save</span></span><br></pre></td></tr></table></figure><h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">search:</span></span><br><span class="line">  <span class="attr">path:</span> <span class="string">search.xml</span></span><br><span class="line">  <span class="attr">field:</span> <span class="string">post</span></span><br><span class="line">  <span class="attr">content:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure><p>如果需要排除搜索，只要在indexing:false 即可</p><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: &quot;Code Highlight&quot;</span><br><span class="line">date: &quot;2014-03-15 20:17:16&quot;</span><br><span class="line">tags: highlight</span><br><span class="line">categories: Demo</span><br><span class="line">description: &quot;A collection of Hello World applications from helloworld.org.&quot;</span><br><span class="line">toc: true</span><br><span class="line">indexing: false</span><br><span class="line">---</span><br></pre></td></tr></table></figure>]]></content>
-      
-      
-      <categories>
-          
-          <category> 工具 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> hexo </tag>
-            
-            <tag> 性能测试 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>hexo-generator-search</title>
       <link href="2023/01/06/hexo-generator-search/"/>
       <url>2023/01/06/hexo-generator-search/</url>
       
@@ -616,50 +660,6 @@
         <tags>
             
             <tag> hexo </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>juc-01</title>
-      <link href="2023/01/06/juc/"/>
-      <url>2023/01/06/juc/</url>
-      
-        <content type="html"><![CDATA[<h3 id="阶段1"><a href="#阶段1" class="headerlink" title="阶段1"></a>阶段1</h3><p>什么是JUC？<br>为什么CAS和AQS是JUC的核心？<br>ReentrantLock适用于什么场景？<br>门闩（Latch）同步器适用于什么场景？<br>篱笆（Barrier）同步器适用于什么场景？<br>信号量（Semaphore）同步器适用于什么场景？<br>阶段同步器（Phaser）适用于什么场景？<br>原生锁支持（LockSupport）适用于什么场景？<br>有哪些同步队列可以用于线程池？<br>Exchanger交换器适用于什么场景？<br>各种同步器在大厂面试中的综合运用怎么做？<br>（首次公开）通过阿里一道面试题理解大厂面试多线程代码题的要求<br>02.赢在2021年金三银四的起跑线上</p><p>什么是JUC？什么是JUC？什么是JUC？什么是JUC？什么是JUC？什么是JUC？<br>为什么CAS和AQS是JUC的核心？<br>ReentrantLock适用于什么场景？<br>门闩（Latch）同步器适用于什么场景？<br>篱笆（Barrier）同步器适用于什么场景？<br>信号量（Semaphore）同步器适用于什么场景？<br>阶段同步器（Phaser）适用于什么场景？<br>原生锁支持（LockSupport）适用于什么场景？<br>有哪些同步队列可以用于线程池？<br>Exchanger交换器适用于什么场景？<br>各种同步器在大厂面试中的综合运用怎么做？<br>（首次公开）通过阿里一道面试题理解大厂面试多线程代码题的要求<br>02.赢在2021年金三银四的起跑线上</p><h3 id="阶段2"><a href="#阶段2" class="headerlink" title="阶段2"></a>阶段2</h3><p>线程的本质(操作系统与CPU是如何执行线程的)<br>并发编程为什么充满挑战？<br>并发编程的三大特性：可见性、有序性、原子性<br>synchronized JMM CAS AQS lock这些高频出现的面试概念究竟是什么？<br>无锁、偏向锁、轻量级锁、重量级锁升级过程<br>悲观锁/乐观锁 共享锁/独占锁 整体锁/分段锁 可重入锁/不可重入锁<br>（首次公开）银弹已经诞生？有没有一种一定能保证线程安全的终极代码？<br>（首次公开）工作线程数，设多少最合适？如何理解N<em>C</em>(1+C/W)的计算公式?</p>]]></content>
-      
-      
-      
-        <tags>
-            
-            <tag> juc </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
-      <title>Hello Hexo</title>
-      <link href="2023/01/06/idea%20always%20Update%20Indices/"/>
-      <url>2023/01/06/idea%20always%20Update%20Indices/</url>
-      
-        <content type="html"><![CDATA[<h1 id="idea-always-Update-Indices"><a href="#idea-always-Update-Indices" class="headerlink" title="idea always Update Indices"></a>idea always Update Indices</h1><h2 id="Open-IntelliJ-IDEA"><a href="#Open-IntelliJ-IDEA" class="headerlink" title="Open IntelliJ IDEA."></a>Open IntelliJ IDEA.</h2><ol><li>Select the File menu.</li><li>Select the Invalidate Caches / Restart… menu. Once selected you get a pop-up with a bunch of options.</li><li>Select Invalidate and Restart. and before doing that make sure you saved all your changes else it might delete some unsaved changes.</li></ol>]]></content>
-      
-      
-      <categories>
-          
-          <category> idea </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> idea </tag>
             
         </tags>
       
